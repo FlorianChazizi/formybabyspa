@@ -10,7 +10,7 @@ import '../styles/hero-carousel.css';
 const slides = [
   {
     image: baby1,
-    title: "For My Baby Spa Κατερίνι",
+    title: "For My Baby Spa Κατερίνη",
     subtitle: "Gentle relaxation and wellness for your precious little one",
     gradient: "gradient-1"
   },
