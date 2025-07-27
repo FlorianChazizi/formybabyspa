@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className="navbar-links">
           <a href="#services" className="navlinks">Υπηρεσίες</a>
           <a href="#about" className="navlinks">Σχετικά με εμάς</a>
-          <a href="#about" className="navlinks">tha doume</a>
+          <a href="#about" className="navlinks">Test</a>
           <a href="#contact" className="navlinks contact">Επικοινωνία</a>
         </div>
 

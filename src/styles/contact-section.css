@@ -141,3 +141,56 @@
 .contact-form button:hover {
   background-color: #0ea5e9;
 }
+
+.map-placeholder {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.map-placeholder iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  display: block;
+}
+
+.map-info {
+  position: relative;
+  width: 100%;
+}
+
+/* Info List Styling */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon-small {
+  width: 24px;
+  height: 24px;
+  color: #62a4c5; /* Accent color */
+  flex-shrink: 0;
+}
+
+.info-label {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.info-text {
+  margin: 0;
+  color: #555;
+}
