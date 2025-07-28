@@ -62,8 +62,8 @@ export default function HeroCarousel() {
               <h1>{slide.title}</h1>
               <p>{slide.subtitle}</p>
               <div className="carousel-buttons">
-                <button className="btn primary">Book Appointment</button>
-                <button className="btn secondary">Learn More</button>
+                <a className="btn primary">Κλείσε Ραντεβού</a>
+                <a className="btn secondary">Μάθετε περισσότερα</a>
               </div>
             </div>
           </div>

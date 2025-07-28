@@ -1,9 +1,10 @@
 
-import './App.css'
-import Navbar from './components/Navbar.tsx'
-import HeroCarousel from './components/Hero-carousel.tsx'
-import ServicesSection from './components/Service-section.tsx'
-import ContactSection from './components/contact-section.tsx'
+import './App.css';
+import Navbar from './components/Navbar.tsx';
+import HeroCarousel from './components/Hero-carousel.tsx';
+import ServicesSection from './components/Service-section.tsx';
+import ContactSection from './components/contact-section.tsx';
+import Footer from './components/Footer.tsx';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
         <HeroCarousel />
         <ServicesSection />
         <ContactSection />
-
+        <Footer />
     </div>
     </>
   )
