@@ -158,6 +158,18 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .navigation-bar{
+    height: 85px;
+  }
+  .navbar-container{
+    height: 85px;
+  }
+  .logo-img{
+    height: 100px;
+    width: 100px; 
+  }
+
   .navbar-links {
     display: none;
   }
