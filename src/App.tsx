@@ -5,6 +5,7 @@ import HeroCarousel from './components/Hero-carousel.tsx';
 import ServicesSection from './components/Service-section.tsx';
 import ContactSection from './components/contact-section.tsx';
 import Footer from './components/Footer.tsx';
+import ReviewsCarousel from './components/ReviewsCarousel.js';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <HeroCarousel />
         <ServicesSection />
         <ContactSection />
+        <ReviewsCarousel />
         <Footer />
     </div>
     </>

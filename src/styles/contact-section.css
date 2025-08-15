@@ -17,7 +17,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #2d3a4b;
+  color: #5ab5af;
   margin-bottom: 16px;
 }
 
@@ -53,6 +53,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 24px;
+  color: #5ab5af;
 }
 
 .map-placeholder {
@@ -80,7 +81,7 @@
 .icon-small {
   width: 24px;
   height: 24px;
-  color: #38bdf8;
+  color: #5ab5af;
   margin-right: 16px;
   flex-shrink: 0;
 }
@@ -154,7 +155,7 @@
 
 .map-placeholder iframe {
   width: 100%;
-  height: 400px;
+  height: 319px;
   border: 0;
   display: block;
 }
@@ -175,13 +176,6 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-}
-
-.icon-small {
-  width: 24px;
-  height: 24px;
-  color: #62a4c5; /* Accent color */
-  flex-shrink: 0;
 }
 
 .info-label {

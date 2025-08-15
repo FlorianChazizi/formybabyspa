@@ -38,7 +38,7 @@ export default function Navbar() {
 
       {isOpen && (
         <div className="mobile-menu">
-          <a href="#erga" onClick={() => setIsOpen(false)}>Τα έργα μας</a>
+          <a href="/" onClick={() => setIsOpen(false)}>Αρχική</a>
           <a href="#services" onClick={() => setIsOpen(false)}>Υπηρεσίες</a>
           <a href="#about" onClick={() => setIsOpen(false)}>Ποιοί Ήμαστε</a>
           <a href="#contact" className='navlinks contact' onClick={() => setIsOpen(false)}>Επικοινωνία</a>

@@ -6,7 +6,7 @@ export default function ContactSection() {
         <section id="contact" className="contact-section">
             <div className="container">
                 <div className="section-header">
-                    <h2 className="section-title">Visit Our Spa</h2>
+                    <h2 className="section-title">Επικοινωνήστε μαζί μας</h2>
                     <p className="section-description">
                         Located in the heart of the city, our spa offers easy access and ample parking for your convenience
                     </p>
@@ -18,13 +18,13 @@ export default function ContactSection() {
                         <h3 className="card-title">Θα μας βρείτε</h3>
                         <div className="map-placeholder">
                             <div className="map-info">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.1603620035582!2d22.51100494038684!3d40.26862518706053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13580345b209727b%3A0x899a118463222fbd!2sFor%20My%20Baby%20Spa%20Katerini%20(%20By%20Anastasia%20Veloni%20)!5e0!3m2!1sen!2sgr!4v1753631719067!5m2!1sen!2sgr" width="600" height="450"   loading="lazy" ></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.1603620035582!2d22.51100494038684!3d40.26862518706053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13580345b209727b%3A0x899a118463222fbd!2sFor%20My%20Baby%20Spa%20Katerini%20(%20By%20Anastasia%20Veloni%20)!5e0!3m2!1sen!2sgr!4v1753631719067!5m2!1sen!2sgr"    loading="lazy" ></iframe>
                             </div>
                         </div>
 
                         <div className="info-list">
                             <div className="info-item">
-                                <MapPin className="icon-small" />
+                                <MapPin className="icon-smal mapin" />
                                 <div>
                                     <p className="info-label">Διεύθυνση</p>
                                     <p className="info-text">25ης Μαρτίου 46, Κατερίνη 601 00</p>
@@ -32,7 +32,7 @@ export default function ContactSection() {
                             </div>
 
                             <div className="info-item">
-                                <Car className="icon-small" />
+                                <Car className="icon-small car"  />
                                 <div>
                                     <p className="info-label">Parking</p>
                                     <p className="info-text">Διαθέσιμο Parking</p>

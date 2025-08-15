@@ -89,11 +89,13 @@
 
 .btn.primary {
   background-color: white;
-  color: #ff69b4;
+  color: #5ab5af;
 }
 
 .btn.primary:hover {
-  background-color: #add8e6;
+  background-color: #5ab5af;
+    color: white;
+
 }
 
 .btn.secondary {
@@ -104,7 +106,8 @@
 
 .btn.secondary:hover {
   background-color: white;
-  color: #ff69b4;
+  color: #5ab5af;
+;
 }
 
 .carousel-dots {

@@ -50,7 +50,7 @@ export default function Footer() {
             <h4 className="footer-subheading">Services</h4>
             <ul className="footer-list">
               {["Ύδροθεραπεία", "Βρεφικό Μασάζ" ].map(service => (
-                <li key={service}>
+                <li className="service-link" key={service}>
                   <a href="#services" className="footer-link">{service}</a>
                 </li>
               ))}
@@ -61,9 +61,9 @@ export default function Footer() {
           <div>
             <h4 className="footer-subheading">Contact</h4>
             <div className="footer-contact">
-              <p><Phone /> +30 693 102 2111</p>
-              <p><Mail /> formybabyspakaterini@gmail.com</p>
-              <p><MapPin /> 25ης Μαρτίου 46, Κατερίνη 601 00<br /></p>
+              <p><Phone className="phone" /> +30 693 102 2111</p>
+              <p><Mail className="mail" /> formybabyspakaterini@gmail.com</p>
+              <p><MapPin className="mapin" /> 25ης Μαρτίου 46, Κατερίνη 601 00<br /></p>
             </div>
           </div>
         </div>
