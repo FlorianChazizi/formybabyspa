@@ -63,7 +63,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   setTimeout(() => setFormMessage({ text: "", type: "" }), 5000);
 };
   return (
-    <div className="contact-form-wrapper">
+    <div className="contact-form-wrapper" id="radevou">
       <form className="contact-form-card" onSubmit={handleSubmit}>
         <h2 className="contact-form-title">Κλείστε Ραντεβού</h2>
 

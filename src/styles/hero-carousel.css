@@ -90,11 +90,13 @@
 .btn.primary {
   background-color: white;
   color: #5ab5af;
+  text-decoration: none;
 }
 
 .btn.primary:hover {
   background-color: #5ab5af;
-    color: white;
+  color: white;
+  text-decoration: none;
 
 }
 
@@ -102,12 +104,13 @@
   background-color: transparent;
   border: 2px solid white;
   color: white;
+  text-decoration: none;
 }
 
 .btn.secondary:hover {
   background-color: white;
   color: #5ab5af;
-;
+
 }
 
 .carousel-dots {
