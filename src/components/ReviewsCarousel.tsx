@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCube, Pagination } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
+
 import "../styles/reviewscarousel.css";
 
 interface GoogleReview {
