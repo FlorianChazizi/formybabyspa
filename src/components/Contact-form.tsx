@@ -10,22 +10,68 @@ export default function ContactForm() {
     date: "",
   });
 
+  // Track message and type (success or error)
+  const [formMessage, setFormMessage] = useState({ text: "", type: "" });
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // TODO: send data to API
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
+  try {
+    const response = await fetch("http://localhost:3000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "Failed to submit form");
+    }
+
+    // Success
+    setFormMessage({ text: "Η φόρμα υποβλήθηκε με επιτυχία!", type: "success" });
+
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      hours: "",
+      date: "",
+    });
+  } catch (error: unknown) {
+    console.error("Error submitting form:", error);
+
+    // Narrow the unknown type
+    if (error instanceof Error) {
+      setFormMessage({ text: error.message, type: "error" });
+    } else {
+      setFormMessage({ text: "Υπήρξε σφάλμα κατά την υποβολή της φόρμας.", type: "error" });
+    }
+  }
+
+  // Hide message after 5 seconds
+  setTimeout(() => setFormMessage({ text: "", type: "" }), 5000);
+};
   return (
     <div className="contact-form-wrapper">
       <form className="contact-form-card" onSubmit={handleSubmit}>
         <h2 className="contact-form-title">Κλείστε Ραντεβού</h2>
+
+        {formMessage.text && (
+          <div className={`form-message ${formMessage.type}`}>
+            {formMessage.text}
+          </div>
+        )}
 
         <div className="form-group">
           <label htmlFor="name">Όνομα</label>

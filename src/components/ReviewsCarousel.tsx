@@ -18,19 +18,34 @@ export default function ReviewsCarousel() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/reviews")
-      .then((res) => res.json())
-      .then((data: ReviewsApiResponse) => setReviews(data.reviews || []))
-      .catch((err) => console.error("Failed to fetch reviews:", err));
+    const fetchReviews = async () => {
+      try {
+        const res = await fetch("http://localhost:3000/api/reviews");
+        if (!res.ok) throw new Error("Failed to fetch reviews");
+        const data: ReviewsApiResponse = await res.json();
+        setReviews(data.reviews || []);
+      } catch (err) {
+        // Fail silently – just keep reviews as empty array
+        console.warn("Reviews API unavailable, skipping carousel.", err);
+        setReviews([]);
+      }
+    };
+
+    fetchReviews();
   }, []);
 
   const nextReview = () => {
-    setIndex((prev) => (prev + 1) % reviews.length);
+    setIndex((prev) => (reviews.length > 0 ? (prev + 1) % reviews.length : 0));
   };
 
   const prevReview = () => {
-    setIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+    setIndex((prev) => (reviews.length > 0 ? (prev - 1 + reviews.length) % reviews.length : 0));
   };
+
+  if (reviews.length === 0) {
+    // Optional: return null to render nothing if API fails
+    return null;
+  }
 
   return (
     <div className="reviews-wrapper">
@@ -38,32 +53,30 @@ export default function ReviewsCarousel() {
 
       <div className="carousel-container">
         <AnimatePresence mode="wait">
-          {reviews.length > 0 && (
-            <motion.div
-              key={index}
-              className="review-card map-style"
-              initial={{ opacity: 0, rotateY: 90 }}
-              animate={{ opacity: 1, rotateY: 0 }}
-              exit={{ opacity: 0, rotateY: -90 }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="review-header">
-                <img
-                  src={reviews[index].profile_photo_url}
-                  alt={reviews[index].author_name}
-                  className="review-avatar"
-                />
-                <div>
-                  <h3 className="review-name">{reviews[index].author_name}</h3>
-                  <div className="review-stars">
-                    {"★".repeat(reviews[index].rating) +
-                      "☆".repeat(5 - reviews[index].rating)}
-                  </div>
+          <motion.div
+            key={index}
+            className="review-card map-style"
+            initial={{ opacity: 0, rotateY: 90 }}
+            animate={{ opacity: 1, rotateY: 0 }}
+            exit={{ opacity: 0, rotateY: -90 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="review-header">
+              <img
+                src={reviews[index].profile_photo_url}
+                alt={reviews[index].author_name}
+                className="review-avatar"
+              />
+              <div>
+                <h3 className="review-name">{reviews[index].author_name}</h3>
+                <div className="review-stars">
+                  {"★".repeat(reviews[index].rating) +
+                    "☆".repeat(5 - reviews[index].rating)}
                 </div>
               </div>
-              <p className="review-text">{reviews[index].text}</p>
-            </motion.div>
-          )}
+            </div>
+            <p className="review-text">{reviews[index].text}</p>
+          </motion.div>
         </AnimatePresence>
 
         <div className="carousel-controls">
