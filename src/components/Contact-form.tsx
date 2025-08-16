@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "../styles/contact-form.css";
 
 export default function ContactForm() {
@@ -10,6 +11,7 @@ export default function ContactForm() {
     date: "",
   });
 
+const apiUrl = import.meta.env.VITE_API_URL;
   // Track message and type (success or error)
   const [formMessage, setFormMessage] = useState({ text: "", type: "" });
 
@@ -23,7 +25,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://localhost:3000/api/contact", {
+    const response = await fetch(`${apiUrl}/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -138,6 +140,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           Υποβολή
         </button>
       </form>
+
     </div>
   );
 }

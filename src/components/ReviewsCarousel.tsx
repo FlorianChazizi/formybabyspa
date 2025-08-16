@@ -17,10 +17,11 @@ export default function ReviewsCarousel() {
   const [reviews, setReviews] = useState<GoogleReview[]>([]);
   const [index, setIndex] = useState(0);
 
+const apiUrl = import.meta.env.VITE_API_URL;
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/reviews");
+        const res = await fetch(`${apiUrl}/api/reviews`);
         if (!res.ok) throw new Error("Failed to fetch reviews");
         const data: ReviewsApiResponse = await res.json();
         setReviews(data.reviews || []);
