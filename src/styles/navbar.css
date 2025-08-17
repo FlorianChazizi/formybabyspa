@@ -9,17 +9,31 @@
   color: rgb(0, 0, 0);
   transition: background-color 0.3s ease, color 0.3s ease;
 
-  backdrop-filter: blur(10px);                /* blur the background behind */
-  -webkit-backdrop-filter: blur(10px);   
+  background-color: transparent;   /* transparent at top */
+  backdrop-filter: none;           /* no blur at top */
+  -webkit-backdrop-filter: none; 
 }
-
+.navigation-bar.scrolled {
+  backdrop-filter: blur(10px); /* blur effect when scrolled */
+  -webkit-backdrop-filter: blur(10px);
+}
 /* On scroll or open */
 /* .navigation-bar.scrolled, */
 
 .navigation-bar.is-open {
    height: 100vh; 
+     backdrop-filter: blur(10px); /* blur effect when scrolled */
+  -webkit-backdrop-filter: blur(10px);
 }
 
+.navigation-bar.is-open .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.navigation-bar.is-open .hamburger::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 /* Container for flex layout */
 .navbar-container {
   max-width: 1200px;
@@ -29,8 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-    backdrop-filter: blur(10px);                /* blur the background behind */
-  -webkit-backdrop-filter: blur(10px); 
+    /* backdrop-filter: blur(10px);                
+  -webkit-backdrop-filter: blur(10px);  */
 }
 
 /* Logo */
@@ -159,6 +173,9 @@
 @media (max-width: 768px) {
 
   .navigation-bar{
+      background-color: transparent;   /* transparent at top */
+  backdrop-filter: none;           /* no blur at top */
+  -webkit-backdrop-filter: none; 
     height: 85px;
   }
   .navbar-container{

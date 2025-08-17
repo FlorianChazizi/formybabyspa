@@ -1,6 +1,6 @@
 import '../styles/service-section.css';
+import { Link } from "react-router-dom";
 import { Baby, Hand } from 'lucide-react';
-
 import hydro from '../assets/hydro.jpeg';
 import massage from '../assets/massage.jpeg';
 
@@ -12,7 +12,9 @@ const services = [
     description: "Το ζεστό νερό και οι απαλές κινήσεις , δημιουργούν αίσθημα ασφάλειας, βοηθώντας στην ανάπτυξη της αυτοπεποίθησης του μωρού",
     price: "35 €",
     image: hydro,
-    bgClass: "blue-bg"
+    bgClass: "blue-bg",
+    link: "/hydrotherapy",
+    
   },
   {
     icon: Hand,
@@ -20,7 +22,8 @@ const services = [
     description: "Η σωματική επαφή είναι το πιο δυνατό, θεραπευτικό και καθησυχαστικό συναίσθημα για το μωρό σας. Το βρεφικό μασάζ δεν είναι απλώς μια στιγμή τρυφερότητας.",
     price: "35 €",
     image: massage,
-    bgClass: "pink-bg"
+    bgClass: "pink-bg",
+    link: "/massage",
   }
 ];
 
@@ -50,7 +53,10 @@ export default function ServicesSection() {
                   <p className="service-description">{service.description}</p>
                   <div className="service-footer">
                     <span className="price">{service.price}</span>
-                    <button className="book-btn">Book Now</button>
+                    <a className="book-btn">Κάνε κράτηση</a>
+
+                    <Link to={service.link} className="learn-more-btn">Μάθε περισσότερα </Link>
+
                   </div>
                 </div>
               </div>

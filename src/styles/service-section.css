@@ -107,7 +107,22 @@
 .book-btn:hover {
   background-color: #d85d9e;
 }
+.learn-more-btn {
+  text-decoration: none;
+  background-color: #5ab5af;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.learn-more-btn:hover {
+  background-color: #48948f;
+  color: white;
+}
 /* Custom Backgrounds */
 .blue-bg {
   background-color: rgba(173, 216, 230, 0.3); /* light blue */
