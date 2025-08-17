@@ -1,9 +1,17 @@
-import massageImage from "../assets/baby2.jpeg";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+import massageImage from "../assets/massage.jpeg";
 import "../styles/massage.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
 
 export default function MassagePage() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="service-page">
       <div className="hero">
