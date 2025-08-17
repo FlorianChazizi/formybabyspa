@@ -7,9 +7,7 @@ export default function ContactSection() {
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Επικοινωνήστε μαζί μας</h2>
-                    <p className="section-description">
-                        Located in the heart of the city, our spa offers easy access and ample parking for your convenience
-                    </p>
+
                 </div>
 
                 <div className="grid-layout">

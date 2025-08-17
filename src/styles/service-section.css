@@ -107,6 +107,7 @@
 .book-btn:hover {
   background-color: #d85d9e;
 }
+
 .learn-more-btn {
   text-decoration: none;
   background-color: #5ab5af;
@@ -123,11 +124,35 @@
   background-color: #48948f;
   color: white;
 }
+
 /* Custom Backgrounds */
 .blue-bg {
-  background-color: rgba(173, 216, 230, 0.3); /* light blue */
+  background-color: rgba(173, 216, 230, 0.3);
+  /* light blue */
 }
 
 .pink-bg {
-  background-color: rgba(255, 192, 203, 0.3); /* light pink */
+  background-color: rgba(255, 192, 203, 0.3);
+  /* light pink */
+}
+
+@media (max-width: 768px) {
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+ .service-footer {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center items horizontally */
+    gap: 1rem;              /* space between price and button */
+    text-align: center;     /* ensures text is centered */
+  }
+
+  .book-btn,
+  .learn-more-btn {
+    width: auto;            /* let button size fit content */
+    text-align: center;     /* center text inside button */
+  }
 }

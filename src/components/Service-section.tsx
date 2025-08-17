@@ -33,10 +33,7 @@ export default function ServicesSection() {
       <div className="container">
         <div className="section-header">
           <h2>Υπηρεσίες</h2>
-          <p>
-            Carefully designed treatments that promote relaxation, development, and well-being
-            for babies aged 2 weeks to 12 months
-          </p>
+
         </div>
 
         <div className="services-grid">
