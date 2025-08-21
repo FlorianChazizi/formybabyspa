@@ -27,8 +27,8 @@ export default function Navbar() {
         <div className="navbar-links">
           <a href="/" className="navlinks">Αρχική</a>
           <a href="/#services" className="navlinks">Υπηρεσίες</a>
-          <a href="#about" className="navlinks">Σχετικά με εμάς</a>
-          <a href="#contact" className="navlinks contact">Επικοινωνία</a>
+          <a href="#contact" className="navlinks">Επικοινωνία</a>
+          <a href="#radevu" className="navlinks contact">Κλείσε Ραντεβού</a>
         </div>
 
         <button className="navbar-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
@@ -40,8 +40,8 @@ export default function Navbar() {
         <div className="mobile-menu">
           <a href="/" onClick={() => setIsOpen(false)}>Αρχική</a>
           <a href="#services" onClick={() => setIsOpen(false)}>Υπηρεσίες</a>
-          <a href="#about" onClick={() => setIsOpen(false)}>Ποιοί Ήμαστε</a>
-          <a href="#contact" className='navlinks contact' onClick={() => setIsOpen(false)}>Επικοινωνία</a>
+          <a href="#contact" onClick={() => setIsOpen(false)}>Επικοινωνία</a>
+          <a href="#radevu" className='navlinks contact' onClick={() => setIsOpen(false)}>Κλείσε Ραντεβού</a>
         </div>
       )}
     </nav>
