@@ -29,7 +29,7 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -95,6 +95,7 @@
 
 .book-btn {
   background-color: #ff69b4;
+  text-decoration: none;
   color: white;
   border: none;
   padding: 0.6rem 1.5rem;
@@ -135,8 +136,19 @@
   background-color: rgba(255, 192, 203, 0.3);
   /* light pink */
 }
+.violet-bg {
+   background: linear-gradient(
+    to right,
+    rgba(173, 216, 230, 0.7), /* light blue */
+    rgba(255, 192, 203, 0.7)  /* light pink */
+  );
+  /* light violet */
+}
 
 @media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
   .service-icon {
     width: 50px;
     height: 50px;

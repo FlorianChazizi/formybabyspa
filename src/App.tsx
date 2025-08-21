@@ -11,6 +11,7 @@ import ContactForm from './components/Contact-form.tsx';
 import BubblesBackground from "./components/BubblesBackground";
 import HydrotherapyPage from './components/Hydrotherapy.tsx';
 import MassagePage from './components/Massage.tsx';
+import PartyPage from './components/Party.tsx';
 function App() {
 
   return (
@@ -40,6 +41,10 @@ function App() {
         path="/massage"
         element={<MassagePage />} 
        />      
+      <Route 
+        path="/party"
+        element={<PartyPage />} 
+      />
       </Routes>
       <Footer />
 
