@@ -16,12 +16,13 @@ export default function Navbar() {
     <nav className={`navigation-bar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'is-open' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img
+          <a href="/"> <img
             src={logo}
             className=" logo-img"
             height={120}
             width={120}
-            alt="Logo" />
+            alt="Logo" /></a>
+         
         </div>
 
         <div className="navbar-links">
