@@ -50,7 +50,7 @@ export default function ServicesSection() {
             const Icon = service.icon;
             return (
               <div key={index} className={`service-card ${service.bgClass}`}>
-                <img src={service.image} alt={service.title} className="service-image" />
+                <img src={service.image} alt={service.title} className="service-image"  loading='lazy'/>
                 <div className="service-content">
                   <div className="service-title">
                     <Icon className="service-icon" />

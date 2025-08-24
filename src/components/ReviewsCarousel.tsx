@@ -66,6 +66,7 @@ const apiUrl = import.meta.env.VITE_API_URL;
               <img
                 src={reviews[index].profile_photo_url}
                 alt={reviews[index].author_name}
+                loading="lazy"
                 className="review-avatar"
               />
               <div>

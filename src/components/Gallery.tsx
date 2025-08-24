@@ -38,6 +38,7 @@ export default function Gallery({ images }: GalleryProps) {
               <img
                 src={images[selected].src}
                 alt={images[selected].alt}
+                loading="lazy"
                 className="gallery-lightbox-img"
               />
               <button
