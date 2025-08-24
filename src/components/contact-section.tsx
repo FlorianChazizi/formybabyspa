@@ -16,7 +16,7 @@ export default function ContactSection() {
                         <h3 className="card-title">Θα μας βρείτε</h3>
                         <div className="map-placeholder">
                             <div className="map-info">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.1603620035582!2d22.51100494038684!3d40.26862518706053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13580345b209727b%3A0x899a118463222fbd!2sFor%20My%20Baby%20Spa%20Katerini%20(%20By%20Anastasia%20Veloni%20)!5e0!3m2!1sen!2sgr!4v1753631719067!5m2!1sen!2sgr"    loading="lazy" ></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.1603620035582!2d22.51100494038684!3d40.26862518706053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13580345b209727b%3A0x899a118463222fbd!2sFor%20My%20Baby%20Spa%20Katerini%20(%20By%20Anastasia%20Veloni%20)!5e0!3m2!1sen!2sgr!4v1753631719067!5m2!1sen!2sgr"    title="Χάρτης Baby Spa Κατερίνη"  loading="lazy" ></iframe>
                             </div>
                         </div>
 
@@ -50,7 +50,7 @@ export default function ContactSection() {
                                     <Phone className="icon-small" />
                                     <div>
                                         <p className="info-label">Τηλέφωνο</p>
-                                        <a className="info-text" href="tel:+306931022111">+30 693 102 2111</a>
+                                        <a className="info-text" href="tel:+306931022111" aria-label='τηλέφωνο'>+30 693 102 2111</a>
                                     </div>
                                 </div>
 
@@ -58,7 +58,7 @@ export default function ContactSection() {
                                     <Mail className="icon-small" />
                                     <div>
                                         <p className="info-label">Email</p>
-                                        <a className="info-text" href="mailto:formybabyspakaterini@gmail.com">formybabyspakaterini@gmail.com</a>
+                                        <a className="info-text" href="mailto:formybabyspakaterini@gmail.com" aria-label='email'>formybabyspakaterini@gmail.com</a>
                                     </div>
                                 </div>
 

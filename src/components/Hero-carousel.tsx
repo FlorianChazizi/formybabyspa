@@ -62,8 +62,8 @@ export default function HeroCarousel() {
               <h1>{slide.title}</h1>
               <p>{slide.subtitle}</p>
               <div className="carousel-buttons">
-                <a className="btn primary" href="#radevou">Κλείσε Ραντεβού</a>
-                <a className="btn secondary" href="#services">Μάθετε περισσότερα</a>
+                <a className="btn primary" href="#radevou" aria-label='κλείσε ραντεβού'>Κλείσε Ραντεβού</a>
+                <a className="btn secondary" href="#services" aria-label='μάθε περισότερα'>Μάθετε περισσότερα</a>
               </div>
             </div>
           </div>
@@ -76,16 +76,19 @@ export default function HeroCarousel() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`dot ${index === currentSlide ? 'active' : ''}`}
+            aria-label="επόμενη φωτογραφία"
+            className={`dot ${index === currentSlide ? 'active' : ''}`
+            }
+
           />
         ))}
       </div>
 
       {/* Arrows */}
-      <button onClick={prevSlide} className="arrow left">
+      <button onClick={prevSlide} className="arrow left" aria-label="προηγούμενη φωτογραφία">
         <ChevronLeft />
       </button>
-      <button onClick={nextSlide} className="arrow right">
+      <button onClick={nextSlide} className="arrow right" aria-label="επόμενη φωτογραφία">
         <ChevronRight />
       </button>
     </section>

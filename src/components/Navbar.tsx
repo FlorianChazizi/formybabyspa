@@ -22,16 +22,17 @@ export default function Navbar() {
               className=" logo-img"
               height={120}
               width={120}
-              alt="Logo" /></a>
+              alt="Logo"
+              aria-label='Λογότυπο, For my baby spa katerini' /></a>
 
         </div>
 
         <div className="navbar-links">
-          <a href="/" className="navlinks">Αρχική</a>
-          <a href="/#services" className="navlinks">Υπηρεσίες</a>
-          <a href="#contact" className="navlinks">Επικοινωνία</a>
-          <a href="/gallery" className="navlinks">Gallery</a>
-          <a href="#radevou" className="navlinks contact">Κλείσε Ραντεβού</a>
+          <a href="/" className="navlinks" aria-label='αρχική σελίδα'>Αρχική</a>
+          <a href="/#services" className="navlinks" aria-label='σελίδα υπηρεσιών'>Υπηρεσίες</a>
+          <a href="#contact" className="navlinks" aria-label='σελίδα επικοινωνίας'>Επικοινωνία</a>
+          <a href="/gallery" className="navlinks" aria-label='σελίδα φωτογραφιών'>Gallery</a>
+          <a href="#radevou" className="navlinks contact" aria-label='σελίδα ραντεβού'>Κλείσε Ραντεβού</a>
         </div>
 
         <button className="navbar-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
@@ -41,11 +42,11 @@ export default function Navbar() {
 
       {isOpen && (
         <div className="mobile-menu">
-          <a href="/" onClick={() => setIsOpen(false)}>Αρχική</a>
-          <a href="#services" onClick={() => setIsOpen(false)}>Υπηρεσίες</a>
-          <a href="#contact" onClick={() => setIsOpen(false)}>Επικοινωνία</a>
-          <a href="/gallery" onClick={() => setIsOpen(false)}>Gallery</a>
-          <a href="#radevou" className='navlinks contact' onClick={() => setIsOpen(false)}>Κλείσε Ραντεβού</a>
+          <a href="/" onClick={() => setIsOpen(false)} aria-label='αρχική σελίδα'>Αρχική</a>
+          <a href="#services" onClick={() => setIsOpen(false)} aria-label='σελίδα υπηρεσιών'>Υπηρεσίες</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} aria-label='σελίδα επικοινωνίας'>Επικοινωνία</a>
+          <a href="/gallery" onClick={() => setIsOpen(false)} aria-label='σελίδα φωτογραφιών'>Gallery</a>
+          <a href="#radevou" className='navlinks contact' onClick={() => setIsOpen(false)} aria-label='σελίδα ραντεβού'>Κλείσε Ραντεβού</a>
         </div>
       )}
     </nav>

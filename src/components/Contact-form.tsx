@@ -136,7 +136,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           />
         </div>
 
-        <button type="submit" className="submit-btn">
+        <button type="submit" className="submit-btn" aria-label="Υποβολή φόρμας">
           Υποβολή
         </button>
       </form>

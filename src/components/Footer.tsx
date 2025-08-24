@@ -23,8 +23,8 @@ export default function Footer() {
               Creating magical moments and promoting wellness for your precious little ones.
             </p>
             <div className="footer-socials">
-              <a href="https://www.facebook.com/profile.php?id=61567491835555" className="social-icon"><FaFacebookF className="icon fb" /></a>
-              <a href="https://www.instagram.com/formybabyspa_katerini/" className="social-icon"><FaInstagram className="icon insta" /></a>
+              <a href="https://www.facebook.com/profile.php?id=61567491835555" className="social-icon" aria-label="Facebook - for my baby spa katerini"><FaFacebookF className="icon fb" /></a>
+              <a href="https://www.instagram.com/formybabyspa_katerini/" className="social-icon" aria-label="Instagram - for my baby spa katerini"><FaInstagram className="icon insta" /></a>
             </div>
           </div>
 
@@ -36,6 +36,7 @@ export default function Footer() {
                 <li key={section}>
                   <button 
                     onClick={() => scrollToSection(section)} 
+                    aria-label="Επιλογή συνδέσμου"
                     className="footer-link"
                   >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -51,7 +52,7 @@ export default function Footer() {
             <ul className="footer-list">
               {["Ύδροθεραπεία", "Βρεφικό Μασάζ" ].map(service => (
                 <li className="service-link" key={service}>
-                  <a href="#services" className="footer-link">{service}</a>
+                  <a href="#services" className="footer-link" aria-label="Υπηρεσίες, Υδροθεραπία, Βρεφικό Μασάζ">{service}</a>
                 </li>
               ))}
             </ul>

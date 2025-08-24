@@ -81,8 +81,8 @@ const apiUrl = import.meta.env.VITE_API_URL;
         </AnimatePresence>
 
         <div className="carousel-controls">
-          <button onClick={prevReview}>‹</button>
-          <button onClick={nextReview}>›</button>
+          <button onClick={prevReview} aria-label="προηγούμενη κριτική">‹</button>
+          <button onClick={nextReview} aria-label="επόμενη κριτική">›</button>
         </div>
       </div>
     </div>

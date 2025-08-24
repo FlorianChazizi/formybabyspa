@@ -20,6 +20,7 @@ export default function Gallery({ images }: GalleryProps) {
               key={idx}
               onClick={() => setSelected(idx)}
               className="gallery-item"
+              aria-label="επιλογή εικόνας"
             >
               <img src={img.src} alt={img.alt} className="gallery-img" />
               <div className="gallery-overlay" />
@@ -42,6 +43,7 @@ export default function Gallery({ images }: GalleryProps) {
               <button
                 onClick={() => setSelected(null)}
                 className="gallery-close"
+                aria-label="κλείσιμο εικόνας"
               >
                 ✕
               </button>
