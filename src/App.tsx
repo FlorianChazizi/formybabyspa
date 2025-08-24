@@ -12,6 +12,7 @@ import BubblesBackground from "./components/BubblesBackground";
 import HydrotherapyPage from './components/Hydrotherapy.tsx';
 import MassagePage from './components/Massage.tsx';
 import PartyPage from './components/Party.tsx';
+import SpaPage from './components/SpaPage.tsx';
 function App() {
 
   return (
@@ -45,6 +46,10 @@ function App() {
         path="/party"
         element={<PartyPage />} 
       />
+      <Route 
+        path="/gallery"
+        element={<SpaPage />}
+        />
       </Routes>
       <Footer />
 

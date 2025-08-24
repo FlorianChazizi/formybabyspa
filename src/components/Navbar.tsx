@@ -16,19 +16,21 @@ export default function Navbar() {
     <nav className={`navigation-bar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'is-open' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <a href="/"> <img
-            src={logo}
-            className=" logo-img"
-            height={120}
-            width={120}
-            alt="Logo" /></a>
-         
+          <a href="/">
+            <img
+              src={logo}
+              className=" logo-img"
+              height={120}
+              width={120}
+              alt="Logo" /></a>
+
         </div>
 
         <div className="navbar-links">
           <a href="/" className="navlinks">Αρχική</a>
           <a href="/#services" className="navlinks">Υπηρεσίες</a>
           <a href="#contact" className="navlinks">Επικοινωνία</a>
+          <a href="/gallery" className="navlinks">Gallery</a>
           <a href="#radevou" className="navlinks contact">Κλείσε Ραντεβού</a>
         </div>
 
@@ -42,6 +44,7 @@ export default function Navbar() {
           <a href="/" onClick={() => setIsOpen(false)}>Αρχική</a>
           <a href="#services" onClick={() => setIsOpen(false)}>Υπηρεσίες</a>
           <a href="#contact" onClick={() => setIsOpen(false)}>Επικοινωνία</a>
+          <a href="/gallery" onClick={() => setIsOpen(false)}>Gallery</a>
           <a href="#radevou" className='navlinks contact' onClick={() => setIsOpen(false)}>Κλείσε Ραντεβού</a>
         </div>
       )}
