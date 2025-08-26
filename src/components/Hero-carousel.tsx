@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import baby1 from '../assets/baby1.jpeg';
-// import baby2 from '../assets/baby2.jpeg';
-// import baby3 from '../assets/baby3.jpeg';
+import baby2 from '../assets/baby2.jpeg';
+import baby3 from '../assets/baby3.jpeg';
 
 import '../styles/hero-carousel.css'; 
 
@@ -14,18 +14,18 @@ const slides = [
     subtitle: "Gentle relaxation and wellness for your precious little one",
     gradient: "gradient-1"
   },
-  // {
-  //   image: baby2,
-  //   title: "Tranquil Environment",
-  //   subtitle: "Safe, clean, and designed specially for babies",
-  //   gradient: "gradient-2"
-  // },
-  // {
-  //   image: baby3,
-  //   title: "Expert Care",
-  //   subtitle: "Certified professionals ensuring your baby's comfort and safety",
-  //   gradient: "gradient-3"
-  // }
+  {
+    image: baby2,
+    title: "Υδροθεραπεία για Μωρά",
+    subtitle: "Safe, clean, and designed specially for babies",
+    gradient: "gradient-2"
+  },
+  {
+    image: baby3,
+    title: "Βρεφικό Μασάζ",
+    subtitle: "Certified professionals ensuring your baby's comfort and safety",
+    gradient: "gradient-3"
+  }
 ];
 
 
