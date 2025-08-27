@@ -13,6 +13,7 @@ import HydrotherapyPage from './components/Hydrotherapy.tsx';
 import MassagePage from './components/Massage.tsx';
 import PartyPage from './components/Party.tsx';
 import SpaPage from './components/SpaPage.tsx';
+import NotFound from './pages/NotFound.tsx';
 function App() {
 
   return (
@@ -50,6 +51,10 @@ function App() {
         path="/gallery"
         element={<SpaPage />}
         />
+      <Route
+        path="*"
+        element={<NotFound />}
+      />
       </Routes>
       <Footer />
 
