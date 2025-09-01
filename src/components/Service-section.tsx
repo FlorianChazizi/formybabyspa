@@ -1,9 +1,12 @@
 import '../styles/service-section.css';
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Baby, Hand, Phone,  Cake } from 'lucide-react';
 import hydro from '../assets/hydro.jpeg';
 import massage from '../assets/massage.jpeg';
 import party from '../assets/party3.jpg';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const services = [
   {
@@ -37,6 +40,10 @@ const services = [
 ];
 
 export default function ServicesSection() {
+    useEffect(() => {
+      Aos.init({ duration: 1000, once: true }); // 1000ms animation, play once
+    }, []);
+  
   return (
     <section id="services" className="services-section">
       <div className="container">
@@ -49,7 +56,7 @@ export default function ServicesSection() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div key={index} className={`service-card ${service.bgClass}`}>
+              <div key={index} className={`service-card ${service.bgClass}`} data-aos="fade-right">
                 <img src={service.image} alt={service.title} className="service-image"  loading='lazy'/>
                 <div className="service-content">
                   <div className="service-title">

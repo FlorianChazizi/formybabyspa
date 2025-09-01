@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import baby1 from '../assets/baby1.jpeg';
 import baby2 from '../assets/baby2.jpeg';
 import baby3 from '../assets/baby3.jpeg';
 
-import '../styles/hero-carousel.css'; 
+import '../styles/hero-carousel.css';
 
 const slides = [
   {
@@ -31,6 +33,10 @@ const slides = [
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true }); // 1000ms animation, play once
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,11 +65,11 @@ export default function HeroCarousel() {
             <div className={`gradient-overlay ${slide.gradient}`}></div>
             <img src={slide.image} alt={slide.title} className="carousel-image" />
             <div className="carousel-text">
-              <h1>{slide.title}</h1>
-              <p>{slide.subtitle}</p>
+              <h1 data-aos="fade-up">{slide.title}</h1>
+              <p data-aos="fade-up"> {slide.subtitle}</p>
               <div className="carousel-buttons">
-                <a className="btn primary" href="#radevou" aria-label='κλείσε ραντεβού'>Κλείσε Ραντεβού</a>
-                <a className="btn secondary" href="#services" aria-label='μάθε περισότερα'>Μάθετε περισσότερα</a>
+                <a className="btn primary" href="#radevou" aria-label='κλείσε ραντεβού' data-aos="fade-down">Κλείσε Ραντεβού</a>
+                <a className="btn secondary" href="#services" aria-label='μάθε περισότερα' data-aos="fade-down">Μάθετε περισσότερα</a>
               </div>
             </div>
           </div>
