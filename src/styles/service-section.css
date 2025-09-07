@@ -186,6 +186,7 @@
 }
 
 .extra-service-content ul {
+  text-align: left;
   list-style: disc inside;
   padding-left: 0.5rem;
   color: #444;
