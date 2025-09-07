@@ -6,11 +6,11 @@ import "aos/dist/aos.css";
 // import vid1 from "../assets/vid1.mov";
 import vid2 from "../assets/vid2.mov";
 import vid3 from "../assets/vid3.mov";
-import vid4 from "../assets/vid4.mov";
+// import vid4 from "../assets/vid4.mov";
 
 import "../styles/hero-carousel.css";
 
-const videos = [vid2, vid3, vid4];
+const videos = [vid2, vid3];
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
