@@ -52,7 +52,7 @@ const apiUrl = import.meta.env.VITE_API_URL;
     <div className="reviews-wrapper">
       <h2 className="reviews-title">Τι είπαν για εμάς</h2>
 
-      <div className="carousel-container">
+      <div className="carousel-container-review">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
