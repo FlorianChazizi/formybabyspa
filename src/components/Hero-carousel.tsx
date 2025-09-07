@@ -1,100 +1,90 @@
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import baby1 from '../assets/baby1.jpeg';
-import baby2 from '../assets/baby2.jpeg';
-import baby3 from '../assets/baby3.jpeg';
+// import vid1 from "../assets/vid1.mov";
+import vid2 from "../assets/vid2.mov";
+import vid3 from "../assets/vid3.mov";
+import vid4 from "../assets/vid4.mov";
 
-import '../styles/hero-carousel.css';
+import "../styles/hero-carousel.css";
 
-const slides = [
-  {
-    image: baby1,
-    title: "For My Baby Spa Κατερίνη",
-    subtitle: "Gentle relaxation and wellness for your precious little one",
-    gradient: "gradient-1"
-  },
-  {
-    image: baby2,
-    title: "Υδροθεραπεία για Μωρά",
-    subtitle: "Safe, clean, and designed specially for babies",
-    gradient: "gradient-2"
-  },
-  {
-    image: baby3,
-    title: "Βρεφικό Μασάζ",
-    subtitle: "Certified professionals ensuring your baby's comfort and safety",
-    gradient: "gradient-3"
-  }
-];
-
+const videos = [vid2, vid3, vid4];
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   useEffect(() => {
-    Aos.init({ duration: 1000, once: true }); // 1000ms animation, play once
+    Aos.init({ duration: 1000, once: true });
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.75 // 
+    }
+  }, [currentSlide]); // run every time we switch video
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setCurrentSlide((prev) => (prev + 1) % videos.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentSlide((prev) => (prev - 1 + videos.length) % videos.length);
+  };
+
+  const handleVideoEnd = () => {
+    setCurrentSlide((prev) => (prev + 1) % videos.length);
   };
 
   return (
     <section id="home" className="hero-carousel">
-      <div className="carousel-container">
-        {slides.map((slide, index) => (
+      <div className="carousel-container " data-aos="fade-in">
+        {videos.map((video, index) => (
           <div
             key={index}
-            className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}
+            className={`carousel-slide gradient-overlay gradient-1 ${
+              index === currentSlide ? "active" : ""
+            }`}
           >
-            <div className={`gradient-overlay ${slide.gradient}`}></div>
-            <img src={slide.image} alt={slide.title} className="carousel-image" />
-            <div className="carousel-text">
-              <h1 data-aos="fade-up">{slide.title}</h1>
-              <p data-aos="fade-up"> {slide.subtitle}</p>
-              <div className="carousel-buttons">
-                <a className="btn primary" href="#radevou" aria-label='κλείσε ραντεβού' data-aos="fade-down">Κλείσε Ραντεβού</a>
-                <a className="btn secondary" href="#services" aria-label='μάθε περισότερα' data-aos="fade-down">Μάθετε περισσότερα</a>
-              </div>
-            </div>
+            {index === currentSlide && (
+              <video
+                ref={videoRef}
+                src={video}
+                className="carousel-video"
+                autoPlay
+                muted
+                playsInline
+                onEnded={handleVideoEnd}
+              />
+            )}
           </div>
         ))}
       </div>
 
+      <div className="carousel-overlay-text">
+        <h1>For my Baby Spa Katerini</h1>
+      </div>
+
+
       {/* Dots */}
       <div className="carousel-dots">
-        {slides.map((_, index) => (
+        {videos.map((_, index) => (
           <button
             key={index}
+            className={`dot ${index === currentSlide ? "active" : ""}`}
             onClick={() => setCurrentSlide(index)}
-            aria-label="επόμενη φωτογραφία"
-            className={`dot ${index === currentSlide ? 'active' : ''}`
-            }
-
           />
         ))}
       </div>
 
       {/* Arrows */}
-      <button onClick={prevSlide} className="arrow left" aria-label="προηγούμενη φωτογραφία">
+      <button onClick={prevSlide} className="arrow left" aria-label="προηγούμενη">
         <ChevronLeft />
       </button>
-      <button onClick={nextSlide} className="arrow right" aria-label="επόμενη φωτογραφία">
+      <button onClick={nextSlide} className="arrow right" aria-label="επόμενη">
         <ChevronRight />
       </button>
     </section>

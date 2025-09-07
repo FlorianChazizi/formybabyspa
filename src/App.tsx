@@ -14,6 +14,8 @@ import MassagePage from './components/Massage.tsx';
 import PartyPage from './components/Party.tsx';
 import SpaPage from './components/SpaPage.tsx';
 import NotFound from './pages/NotFound.tsx';
+import CollaborationInvite from './components/CollaborationInvite.tsx';
+import WhoWeAre from './components/WhoWeAre.tsx';
 function App() {
 
   return (
@@ -28,10 +30,12 @@ function App() {
             <>
               <HeroCarousel />
               <ServicesSection />
+              <WhoWeAre />
               <ContactSection />
               <ReviewsCarousel />
               <BubblesBackground />
               <ContactForm />
+              <CollaborationInvite />
             </>
           }
       />

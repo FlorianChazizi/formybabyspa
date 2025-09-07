@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Baby, Hand, Phone,  Cake } from 'lucide-react';
 import hydro from '../assets/hydro.jpeg';
 import massage from '../assets/massage.jpeg';
-import party from '../assets/party3.jpg';
+import serviceparty from '../assets/party.jpeg';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -33,7 +33,7 @@ const services = [
     title: "Παιδικό Πάρτυ | Γενέθλια",
     description: "Γιορτάστε τα γενέθλια του παιδιού σας σε έναν μαγικό χώρο γεμάτο φροντίδα, χαρά και αισθητηριακές εμπειρίες που θα μείνουν αξέχαστες!",
      price: <Phone />,
-    image: party,
+    image: serviceparty,
     bgClass: "violet-bg",
     link: "/party",
   }
@@ -65,7 +65,7 @@ export default function ServicesSection() {
                   </div>
                   <p className="service-description">{service.description}</p>
                   <div className="service-footer">
-                    <span className="price">{service.price}</span>
+                    {/* <span className="price">{service.price}</span> */}
                     <a className="book-btn" href='#radevou'>Κάνε κράτηση</a>
 
                     <Link to={service.link} className="learn-more-btn">Μάθε περισσότερα </Link>

@@ -1,5 +1,6 @@
 .hero-carousel {
   position: relative;
+  /* top: 150px; */
   height: 100vh;
   overflow: hidden;
   font-family: sans-serif;
@@ -28,6 +29,22 @@
   object-fit: cover;
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* fullscreen height */
+  overflow: hidden;
+}
+
+.carousel-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
 .gradient-overlay {
   position: absolute;
   inset: 0;
@@ -35,16 +52,37 @@
   opacity: 0.7;
 }
 
+.carousel-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+  /* ensure it sits above videos */
+}
+
+.carousel-overlay-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  /* optional for readability */
+}
+
 .gradient-1 {
-  background: rgba(0, 0, 0, 0.35);;
+  background: rgba(0, 0, 0, 0.25);
+  ;
 }
 
 .gradient-2 {
-  background: rgba(0, 0, 0, 0.35);;
+  background: rgba(0, 0, 0, 0.35);
+  ;
 }
 
 .gradient-3 {
-  background: rgba(0, 0, 0, 0.35);;
+  background: rgba(0, 0, 0, 0.35);
+  ;
 }
 
 .carousel-text {
@@ -160,4 +198,12 @@
 
 .arrow:hover {
   color: #add8e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-overlay-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }

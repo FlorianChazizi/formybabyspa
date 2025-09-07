@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 import "../styles/footer.css";
@@ -25,6 +25,8 @@ export default function Footer() {
             <div className="footer-socials">
               <a href="https://www.facebook.com/profile.php?id=61567491835555" className="social-icon" aria-label="Facebook - for my baby spa katerini"><FaFacebookF className="icon fb" /></a>
               <a href="https://www.instagram.com/formybabyspa_katerini/" className="social-icon" aria-label="Instagram - for my baby spa katerini"><FaInstagram className="icon insta" /></a>
+              <a href="https://www.tiktok.com/@formybabyspa.kate" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><FaTiktok /></a>
+
             </div>
           </div>
 
@@ -34,8 +36,8 @@ export default function Footer() {
             <ul className="footer-list">
               {["Αρχική", "Υπηρεσίες", "Σχετικά με εμάς", "Επικοινωνία"].map((section) => (
                 <li key={section}>
-                  <button 
-                    onClick={() => scrollToSection(section)} 
+                  <button
+                    onClick={() => scrollToSection(section)}
                     aria-label="Επιλογή συνδέσμου"
                     className="footer-link"
                   >
@@ -50,7 +52,7 @@ export default function Footer() {
           <div>
             <h4 className="footer-subheading">Services</h4>
             <ul className="footer-list">
-              {["Ύδροθεραπεία", "Βρεφικό Μασάζ" ].map(service => (
+              {["Ύδροθεραπεία", "Βρεφικό Μασάζ"].map(service => (
                 <li className="service-link" key={service}>
                   <a href="#services" className="footer-link" aria-label="Υπηρεσίες, Υδροθεραπία, Βρεφικό Μασάζ">{service}</a>
                 </li>
@@ -71,9 +73,9 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} For my  Baby Spa  - Κατερίνη by Αναστασία Βελώνη. </p>
-            <p>
-                All rights reserved. | Privacy Policy | Terms of Service
-                </p>
+          <p>
+            All rights reserved. | Privacy Policy | Terms of Service
+          </p>
         </div>
       </div>
     </footer>
