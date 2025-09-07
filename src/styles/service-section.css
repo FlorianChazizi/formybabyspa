@@ -27,6 +27,7 @@
   margin: 0 auto;
 }
 
+/* === Main Service Cards === */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -129,42 +130,130 @@
 /* Custom Backgrounds */
 .blue-bg {
   background-color: rgba(173, 216, 230, 0.3);
-  /* light blue */
 }
 
 .pink-bg {
   background-color: rgba(255, 192, 203, 0.3);
-  /* light pink */
 }
+
 .violet-bg {
-   background: linear-gradient(
+  background: linear-gradient(
     to right,
-    rgba(173, 216, 230, 0.7), /* light blue */
-    rgba(255, 192, 203, 0.7)  /* light pink */
+    rgba(173, 216, 230, 0.7),
+    rgba(255, 192, 203, 0.7)
   );
-  /* light violet */
 }
 
-@media (max-width: 768px) {
+/* === Extra Services Section === */
+.extra-services {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.extra-service-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.extra-service-block:nth-child(even) {
+  flex-direction: row-reverse; /* alternate image/text order */
+}
+
+.extra-service-image {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; /* keeps images proportional */
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.extra-service-content {
+  flex: 1;
+}
+
+.extra-service-content h3 {
+  font-size: 1.8rem;
+  color: #5ab5af;
+  margin-bottom: 1rem;
+}
+
+.extra-service-content ul {
+  list-style: disc inside;
+  padding-left: 0.5rem;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.extra-service-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 1024px) {
   .services-grid {
-    grid-template-columns: 1fr; /* single column on small screens */
-  }
-  .service-icon {
-    width: 50px;
-    height: 50px;
+    grid-template-columns: 1fr; /* stack service cards */
   }
 
- .service-footer {
-    display: flex;
-    flex-direction: column; /* stack vertically */
-    align-items: center;    /* center items horizontally */
-    gap: 1rem;              /* space between price and button */
-    text-align: center;     /* ensures text is centered */
+  .extra-service-block {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .book-btn,
-  .learn-more-btn {
-    width: auto;            /* let button size fit content */
-    text-align: center;     /* center text inside button */
+  .extra-service-block:nth-child(even) {
+    flex-direction: column; /* no alternating on tablets/mobiles */
   }
+
+  .extra-service-image {
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /* widescreen feel on smaller devices */
+  }
+
+  .extra-service-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .extra-service-content ul {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .extra-service-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .extra-service-content ul {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .extra-service-image {
+    aspect-ratio: 1 / 1; /* square images on very small screens */
+  }
+}
+
+/* === Zoom Hover Effect on Images === */
+.service-image,
+.extra-service-image {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-image:hover,
+.extra-service-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
