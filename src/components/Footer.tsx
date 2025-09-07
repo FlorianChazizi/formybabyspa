@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="footer-socials">
               <a href="https://www.facebook.com/profile.php?id=61567491835555" className="social-icon" aria-label="Facebook - for my baby spa katerini"><FaFacebookF className="icon fb" /></a>
               <a href="https://www.instagram.com/formybabyspa_katerini/" className="social-icon" aria-label="Instagram - for my baby spa katerini"><FaInstagram className="icon insta" /></a>
-              <a href="https://www.tiktok.com/@formybabyspa.kate" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><FaTiktok /></a>
+              <a href="https://www.tiktok.com/@formybabyspa.kate" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><FaTiktok className=" icon tiktok"/></a>
 
             </div>
           </div>
