@@ -16,7 +16,7 @@ export default function HydrotherapyPage() {
     return (
         <div className="service-page">
             <div className="hero">
-                <img src={hydroBanner} alt="Υδροθεραπεία" />
+                <img src={hydroBanner} alt="Υδροθεραπεία" loading="lazy"/>
                 <div className="hero-overlay">
                     <h1>Υδροθεραπεία </h1>
 

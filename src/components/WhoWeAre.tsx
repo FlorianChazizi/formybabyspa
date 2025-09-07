@@ -20,7 +20,7 @@ export default function WhoWeAre() {
 
         {/* 🔹 Φωτογραφία μετά τη 2η παράγραφο */}
         <div className="who-image-wrapper">
-          <img src={teamPhoto} alt="Η ομάδα του For My Baby Spa" className="who-image" />
+          <img src={teamPhoto} alt="Η ομάδα του For My Baby Spa" className="who-image"  loading="lazy"/>
         </div>
 
         <p>

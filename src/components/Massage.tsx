@@ -15,7 +15,7 @@ export default function MassagePage() {
   return (
     <div className="service-page">
       <div className="hero">
-        <img src={massageImage} alt="Βρεφικό Μασάζ" />
+        <img src={massageImage} alt="Βρεφικό Μασάζ" loading="lazy" />
         <div className="hero-overlay">
           <h1>Βρεφικό Μασάζ</h1>
         </div>

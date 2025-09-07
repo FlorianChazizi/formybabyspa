@@ -22,7 +22,7 @@ export default function Gallery({ images }: GalleryProps) {
               className="gallery-item"
               aria-label="επιλογή εικόνας"
             >
-              <img src={img.src} alt={img.alt} className="gallery-img" />
+              <img src={img.src} alt={img.alt} className="gallery-img"  loading="lazy"/>
               <div className="gallery-overlay" />
             </button>
           ))}

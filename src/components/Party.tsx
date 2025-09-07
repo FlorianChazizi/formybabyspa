@@ -17,7 +17,7 @@ export default function PartyPage() {
     <div className="service-page">
       {/* Hero Section */}
       <div className="hero">
-        <img src={partyImg} alt="Baby Spa Party" />
+        <img src={partyImg} alt="Baby Spa Party" loading="lazy" />
         <div className="hero-overlay">
           <h1>Birthday Party</h1>
         </div>
@@ -59,7 +59,7 @@ export default function PartyPage() {
           <li>Έως 8 παιδάκια: 2,5 ώρες</li>
           <li>Έως 10 παιδάκια: 3 ώρες</li>
         </ul>
-              <img src={party1Image} alt="Baby Spa Party - Πακέτο 1" className="package-image" />
+              <img src={party1Image} alt="Baby Spa Party - Πακέτο 1" className="package-image"  loading="lazy"/>
 
       {/* Πακέτο 2 */}
         <h3>Πακέτο 2 “Μαγικά Γενέθλια” ✨</h3>
@@ -84,7 +84,7 @@ export default function PartyPage() {
           Έως 8 παιδάκια: 3 ώρες<br />
           Έως 10 παιδάκια: 3 ώρες
         </p>
-        <img src={party2Image} alt="Baby Spa Party - Πακέτο 2" className="package-image" />
+        <img src={party2Image} alt="Baby Spa Party - Πακέτο 2" className="package-image"  loading="lazy"/>
 
         {/* Πακέτο 3 */}
         <h3>Πακέτο 3 “Mini Party” ✨</h3>
@@ -101,7 +101,7 @@ export default function PartyPage() {
           Έως 6 παιδάκια: 1 ώρα<br />
           Έως 10 παιδάκια: 1,5 ώρα
         </p>
-        <img src={party3Image} alt="Baby Spa Party - Πακέτο 3" className="package-image" />
+        <img src={party3Image} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>
 
         {/* Πακέτο 4 */}
         <h3>Πακέτο 4 “Boys Bubble Party” 🎉</h3>

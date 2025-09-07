@@ -28,7 +28,7 @@ export default function SpaPage() {
     return (
         <div>
             <div className="hero">
-                <img src={HeroGallery} alt="Gallery" />
+                <img src={HeroGallery} alt="Gallery" loading="lazy" />
                 <div className="hero-overlay">
                     <h1>Gallery</h1>
                 </div>
