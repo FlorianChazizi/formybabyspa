@@ -85,6 +85,7 @@
 .service-footer {
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   align-items: center;
 }
 
@@ -95,6 +96,7 @@
 }
 
 .book-btn {
+  text-align: center;
   background-color: #ff69b4;
   text-decoration: none;
   color: white;
@@ -111,6 +113,7 @@
 }
 
 .learn-more-btn {
+  text-align: center;
   text-decoration: none;
   background-color: #5ab5af;
   color: white;
