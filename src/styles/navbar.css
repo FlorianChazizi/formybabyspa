@@ -19,7 +19,6 @@
   /* blur effect when scrolled */
   -webkit-backdrop-filter: blur(10px);
 }
-
 /* On scroll or open */
 /* .navigation-bar.scrolled, */
 
@@ -78,7 +77,9 @@
   font-size: 1rem;
   /* text-transform: uppercase; */
 }
-
+.navlinks.scrolled {
+  color: #5ab5af;
+}
 /* .navlinks::after {
   content: '';
   position: absolute;
@@ -121,6 +122,10 @@
   font-weight: 700;
   transition: background-color 0.4s;
 }
+.contact.scrolled{
+  background-color: wh5ab5afite;
+  color: white;
+}
 
 .contact:hover {
   background-color: #ffffff;
@@ -139,7 +144,7 @@
 .hamburger {
   width: 24px;
   height: 2px;
-  background: white;
+  background: #5ab5af;
   display: block;
   position: relative;
 }
@@ -149,7 +154,7 @@
   content: '';
   width: 24px;
   height: 2px;
-  background: white;
+  background: #5ab5af;
   position: absolute;
   left: 0;
   transition: 0.3s ease;
@@ -179,7 +184,7 @@
   text-align: center;
   padding: 0.75rem 0;
   text-decoration: none;
-  color: white;
+  color: #5ab5af;
   font-weight: bold;
 }
 
@@ -246,7 +251,9 @@
 
   /* highlight color */
 }
-
+.navbar-socials a.scrolled {
+  color: #5ab5af;
+}
 /* Hide mobile socials by default */
 .mobile-socials {
   display: none;
@@ -262,7 +269,7 @@
 
 .mobile-menu-socials a {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #5ab5af;
 }
 .mobile-menu-socials a:hover {
   color: #5ab5af;
@@ -276,4 +283,76 @@
   }
 
 
+}
+
+
+/* Dropdown styling (desktop only) */
+.nav-item-with-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  background: white;
+  display: none;
+  flex-direction: column;
+  padding:  1rem;
+  min-width: 180px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+    text-align: center;
+
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #5ab5af;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+  background: #5ab5af;
+  color: white;
+    border-radius: 8px;
+}
+
+/* Show on hover (only desktop) */
+@media (min-width: 768px) {
+  .nav-item-with-dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
+
+/* On mobile, keep it hidden (just the normal link works) */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: none !important;
+  }
+}
+
+/* Arrow styling */
+/* Make the text and arrow sit on the same line */
+.nav-item-with-dropdown a {
+  display: flex;
+  align-items: center;  /* fixes vertical alignment */
+  gap: 4px;             /* spacing between text & arrow */
+}
+
+/* Adjust the arrow size if needed */
+.nav-item-with-dropdown .dropdown-icon {
+  font-size: 0.75rem;  /* smaller icon */
+  margin-top: 1px;     /* tiny nudge down */
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when parent is hovered (desktop only) */
+@media (min-width: 992px) {
+  .nav-item-with-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+  }
 }

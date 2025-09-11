@@ -65,7 +65,7 @@ export default function HeroCarousel() {
       </div>
 
       <div className="carousel-overlay-text">
-        <h1>For my Baby Spa Katerini</h1>
+        <h1>For my Baby Spa Κατερίνη</h1>
       </div>
 
 

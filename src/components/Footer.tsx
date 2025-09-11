@@ -49,16 +49,27 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="footer-subheading">Services</h4>
-            <ul className="footer-list">
-              {["Ύδροθεραπεία", "Βρεφικό Μασάζ"].map(service => (
-                <li className="service-link" key={service}>
-                  <a href="#services" className="footer-link" aria-label="Υπηρεσίες, Υδροθεραπία, Βρεφικό Μασάζ">{service}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
+<div>
+  <h4 className="footer-subheading">Services</h4>
+  <ul className="footer-list">
+    {[
+      { name: "Ύδροθεραπεία", url: "/hydrotherapy" },
+      { name: "Βρεφικό Μασάζ", url: "/massage" },
+      { name: "Baby Spa", url: "#service3" },
+      { name: "Birthday Party", url: "/party" },
+    ].map(service => (
+      <li className="service-link" key={service.name}>
+        <a
+          href={service.url}
+          className="footer-link"
+          aria-label={`Υπηρεσίες, ${service.name}`}
+        >
+          {service.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Contact Info */}
           <div>

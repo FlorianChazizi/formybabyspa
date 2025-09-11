@@ -59,6 +59,10 @@ function App() {
         path="*"
         element={<NotFound />}
       />
+      <Route 
+        path="/tiny-feet-big-steps"
+        
+      />
       </Routes>
       <Footer />
 
