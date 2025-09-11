@@ -1,13 +1,14 @@
 import '../styles/service-section.css';
 import { useEffect } from 'react';
 import { Link } from "react-router-dom";
-import { Baby, Hand, Phone, Cake } from 'lucide-react';
+import { Baby, Hand, Phone, Cake, Footprints } from 'lucide-react';
 import hydro from '../assets/hydro.jpeg';
 import massage from '../assets/massage.jpeg';
 import serviceparty from '../assets/party.jpeg';
 import Balonia from '../assets/balonia.jpeg';
 import Stolismos from '../assets/stolismos.jpeg';
 import FamilyTub from '../assets/familytub.jpeg';
+import tfbs from '../assets/tfbs.jpeg';
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -35,11 +36,19 @@ const services = [
   {
     icon: Cake,
     title: "Παιδικό Πάρτυ | Γενέθλια",
-    description: "Γιορτάστε τα γενέθλια του παιδιού σας σε έναν μαγικό χώρο γεμάτο φροντίδα, χαρά και αισθητηριακές εμπειρίες που θα μείνουν αξέχαστες!",
+    description: "Γιορτάστε τα γενέθλια του παιδιού σας σε έναν μαγικό χώρο γεμάτο φροντίδα, χαρά και αισθητηριακές εμπειρίες που θα μείνουν αξέχαστες! *6 χρονών και ανω",
     price: <Phone />,
     image: serviceparty,
     bgClass: "violet-bg",
     link: "/party",
+  },
+    {
+    icon: Footprints,
+    title: "Tiny Feet Big Steps | 6 εβδομάδες",
+    description: "Ένα ολοκληρωμένο πρόγραμμα που συνδυάζει την Υδροθεραπεία και το Βρεφικό Μασάζ, προσφέροντας στο μωρό σας μια μοναδική εμπειρία ευεξίας και ανάπτυξης.",
+    link: "/tiny-feet-big-steps",
+    image: tfbs,
+    bgClass: "tfbs-bg",
   }
 ];
 
@@ -70,11 +79,11 @@ const extraServices = [
     items: ["Θεματικός Στολισμός", "Υπηρεσία Little Princesses", "Βρεφική Μάλαξη (ανά παιδί)"],
     image: Stolismos,
   },
-  {
-    title: "Tiny Feet Big Steps",
-    items: ["Διάρκεια: 6 εβδομάδες (1,5 ώρα / εβδομάδα)"],
-    image: massage,
-  },
+  // {
+  //   title: "Tiny Feet Big Steps",
+  //   items: ["Διάρκεια: 6 εβδομάδες (1,5 ώρα / εβδομάδα)"],
+  //   image: massage,
+  // },
   {
     title: "Birthday Party",
     items: ["Πακέτο 1 “Μαγεία & χρώμα”", "Πακέτο 2 “Μαγικά γενέθλια”", "Πακέτο 3 “Mini Party”", "Πακέτο 4 “Boys Bubble Party”"],
@@ -119,22 +128,26 @@ export default function ServicesSection() {
           })}
         </div>
         {/* Extra Services */}
-        <div className="extra-services">
-          {extraServices.map((section, index) => (
-            <div key={index} className="extra-service-block" data-aos="fade-up">
-              <img src={section.image} alt={section.title} className="extra-service-image" loading='lazy' />
-              <div className="extra-service-content">
-                <h3>{section.title}</h3>
-                <ul>
-                  {section.items.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+<div className="extra-services">
+  {extraServices.map((section, index) => (
+    <div key={index} className="extra-service-block" data-aos="fade-up">
+      <img
+        src={section.image}
+        alt={section.title}
+        className="extra-service-image"
+        loading="lazy"
+      />
+      <div className="extra-service-content">
+        <h3>{section.title}</h3>
+        <ul>
+          {section.items.map((item, i) => (
+            <li key={i}>{item}</li>
           ))}
-        </div>
-
+        </ul>
+      </div>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );

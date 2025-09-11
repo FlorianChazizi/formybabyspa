@@ -119,6 +119,8 @@ export default function PartyPage() {
           Έως 6 παιδάκια: 2 ώρες<br />
           Έως 10 παιδάκια: 2,5 ώρες
         </p>
+        <br />
+        <h2> * Απο 6 χρονών και άνω</h2>
       </div>
 
       <BubblesBackground />

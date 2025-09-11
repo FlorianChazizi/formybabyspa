@@ -1,17 +1,31 @@
 .package-image {
   display: block;
-  width: 80%;          /* not full width */
-  max-width: 500px;    /* limit size on large screens */
-  margin: 2rem auto;   /* center horizontally with spacing */
+  width: 80%;
+  /* not full width */
+  max-width: 500px;
+  /* limit size on large screens */
+  margin: 2rem auto;
+  /* center horizontally with spacing */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   object-fit: cover;
-  height: auto;        /* keep aspect ratio */
+  height: auto;
+  /* keep aspect ratio */
 }
 
 @media (max-width: 768px) {
   .package-image {
-    width: 90%;        /* take more space on smaller screens */
-    max-width: 350px;  /* smaller cap */
+    width: 90%;
+    /* take more space on smaller screens */
+    max-width: 350px;
+    /* smaller cap */
   }
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #5ab5af;
 }

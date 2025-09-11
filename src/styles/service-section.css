@@ -1,6 +1,6 @@
 .services-section {
   padding: 5rem 1rem;
-  background-color: #fff;
+  background-color: rgb(242,235,226);
   font-family: 'Arial', sans-serif;
 }
 
@@ -145,6 +145,9 @@
     rgba(173, 216, 230, 0.7),
     rgba(255, 192, 203, 0.7)
   );
+}
+.tfbs-bg{
+  background-color: rgba(140, 240, 155, 0.3);
 }
 
 /* === Extra Services Section === */
