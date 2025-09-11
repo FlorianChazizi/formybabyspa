@@ -16,7 +16,7 @@ import SpaPage from './components/SpaPage.tsx';
 import NotFound from './pages/NotFound.tsx';
 import CollaborationInvite from './components/CollaborationInvite.tsx';
 import WhoWeAre from './components/WhoWeAre.tsx';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 function App() {
 
   return (
