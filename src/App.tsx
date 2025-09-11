@@ -16,6 +16,7 @@ import SpaPage from './components/SpaPage.tsx';
 import NotFound from './pages/NotFound.tsx';
 import CollaborationInvite from './components/CollaborationInvite.tsx';
 import WhoWeAre from './components/WhoWeAre.tsx';
+import TinyFeetBigStepsPage from './components/TinyFeetBigSteps.tsx';
 import { Analytics } from "@vercel/analytics/react";
 function App() {
 
@@ -39,31 +40,31 @@ function App() {
               <CollaborationInvite />
             </>
           }
-      />
-      <Route
-        path="/hydrotherapy"
-        element={<HydrotherapyPage />} 
-       />
-      <Route
-        path="/massage"
-        element={<MassagePage />} 
-       />      
-      <Route 
-        path="/party"
-        element={<PartyPage />} 
-      />
-      <Route 
-        path="/gallery"
-        element={<SpaPage />}
         />
-      <Route
-        path="*"
-        element={<NotFound />}
-      />
-      <Route 
-        path="/tiny-feet-big-steps"
-        
-      />
+        <Route
+          path="/hydrotherapy"
+          element={<HydrotherapyPage />}
+        />
+        <Route
+          path="/massage"
+          element={<MassagePage />}
+        />
+        <Route
+          path="/party"
+          element={<PartyPage />}
+        />
+        <Route
+          path="/gallery"
+          element={<SpaPage />}
+        />
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+        <Route
+          path="/tiny-feet-big-steps"
+          element={<TinyFeetBigStepsPage />}
+        />
       </Routes>
 
       <Analytics />
