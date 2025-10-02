@@ -31,8 +31,8 @@ function App() {
           element={
             <>
               <HeroCarousel />
-              <ServicesSection />
               <WhoWeAre />
+              <ServicesSection />
               <ContactSection />
               <ReviewsCarousel />
               <BubblesBackground />
