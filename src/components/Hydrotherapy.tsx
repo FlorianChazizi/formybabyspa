@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 // import hydro from "../assets/baby1.jpeg";
-import hydroBanner from "../assets/hydrobanner.jpeg";
+import hydroBanner from "../assets/υδροθεραπεία 2.jpg";
 import "../styles/hydrotherapy.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
@@ -16,10 +16,9 @@ export default function HydrotherapyPage() {
     return (
         <div className="service-page">
             <div className="hero">
-                <img src={hydroBanner} alt="Υδροθεραπεία" loading="lazy"/>
+                <img src={hydroBanner} alt="Υδροθεραπεία" loading="lazy" />
                 <div className="hero-overlay">
                     <h1>Υδροθεραπεία </h1>
-
                 </div>
             </div>
 
@@ -59,6 +58,19 @@ export default function HydrotherapyPage() {
                     <li>Συμβουλή: Έχετε μαζί σας μια απαλή πετσέτα και ένα σνακ ή γάλα, καθώς η
                         υδροθεραπεία συνήθως ανοίγει την όρεξη του μωρού. </li>
                 </ul>
+                <p>Μπορείτε να γιορτάσετε τα 1α και 2α γενέθλια του μικρού σας με μοναδικό
+                    τρόπο. Το παιδί σας θα απολαύσει μία ολοκληρωμένη εμπειρία που περιλαμβάνει υδροθεραπεία, βρεφική μάλαξη και θεματικό στολισμό, δημιουργώντας αξέχαστες
+                    στιγμές χαράς και τρυφερότητας για όλη την οικογένεια.</p>
+                <h2>Μηνιαία Πακέτα Υδροθεραπείας και Βρεφικής Μάλαξης</h2>
+                <p>Στο For My Baby Spa προσφέρονται μηνιαία πακέτα υδροθεραπείας, καθώς και
+                    συνδυασμένα πακέτα υδροθεραπείας και βρεφικής μάλαξης, ώστε το μωρό σας να
+                    απολαμβάνει τακτικά τα οφέλη της χαλάρωσης και της ανάπτυξης.</p>
+                <h2>Ξεμύρωμα - Μια Σημαντική Στιγμή</h2>
+                <p>Η υπηρεσία ξεμυρώματος είναι μια πολύτιμη εμπειρία, ιδιαίτερα μετά τη βάφτιση
+                    του παιδιού σας. Προετοιμάζει το μωρό για την πρώτη του επαφή με το νερό,
+                    προσφέροντάς του άνεση, ασφάλεια και ηρεμία, ενώ δημιουργεί μια ξεχωριστή
+                    στιγμή τρυφερότητας με τους γονείς.</p>
+
             </div>
 
             <BubblesBackground />

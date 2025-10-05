@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import massageImage from "../assets/massage.jpeg";
+import massageImage from "../assets/βρεφική μάλαξη 3.jpg";
 import "../styles/massage.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";

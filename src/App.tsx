@@ -14,9 +14,16 @@ import MassagePage from './components/Massage.tsx';
 import PartyPage from './components/Party.tsx';
 import SpaPage from './components/SpaPage.tsx';
 import NotFound from './pages/NotFound.tsx';
-import CollaborationInvite from './components/CollaborationInvite.tsx';
+// import CollaborationInvite from './components/CollaborationInvite.tsx';
 import WhoWeAre from './components/WhoWeAre.tsx';
 import TinyFeetBigStepsPage from './components/TinyFeetBigSteps.tsx';
+import FamilyTub from './components/FamilyTube.tsx';
+import FitForBirth from './components/FitForBirth.tsx';
+import FitAfterBirth from './components/FitAfterBirth.tsx';
+import YogaMamaMwro from './components/YogaMamaMwro.tsx';
+import ProetimasiaGiaThnGenna from './components/ProetimasiaGiaThnGenna.tsx'; 
+import MathimataThilasmou from './components/MathimataThilasmou.tsx';
+import MathimataVrefikisMalaxis from './components/MathimataVrefikisMalaxis.tsx';
 import { Analytics } from "@vercel/analytics/react";
 function App() {
 
@@ -37,7 +44,7 @@ function App() {
               <ReviewsCarousel />
               <BubblesBackground />
               <ContactForm />
-              <CollaborationInvite />
+              {/* <CollaborationInvite /> */}
             </>
           }
         />
@@ -64,6 +71,34 @@ function App() {
         <Route
           path="/tiny-feet-big-steps"
           element={<TinyFeetBigStepsPage />}
+        />
+        <Route
+          path="/family-tub"
+          element={<FamilyTub />}
+        />
+        <Route
+          path="/fit-for-birth"
+          element={<FitForBirth />}
+        />
+        <Route
+          path="/fit-after-birth"
+          element={<FitAfterBirth />}
+        />
+        <Route
+          path="/yoga-mama-mwro"
+          element={<YogaMamaMwro />}
+        />
+        <Route
+          path="/proetimasia-gia-thn-genna"
+          element={<ProetimasiaGiaThnGenna />}
+        />
+        <Route
+          path="/mathimata-thilasmou"
+          element={<MathimataThilasmou />}
+        />
+        <Route
+          path="/mathimata-vrefikis-malaxis"
+          element={<MathimataVrefikisMalaxis />}
         />
       </Routes>
 

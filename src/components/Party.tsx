@@ -1,4 +1,4 @@
-import partyImg from "../assets/serviceparty.jpeg"; // replace with your image
+import partyImg from "../assets/Spa Party.jpg"; // replace with your image
 import "../styles/party.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
