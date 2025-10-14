@@ -24,6 +24,7 @@ import YogaMamaMwro from './components/YogaMamaMwro.tsx';
 import ProetimasiaGiaThnGenna from './components/ProetimasiaGiaThnGenna.tsx'; 
 import MathimataThilasmou from './components/MathimataThilasmou.tsx';
 import MathimataVrefikisMalaxis from './components/MathimataVrefikisMalaxis.tsx';
+import MadeBy from './components/MadeBy.tsx';
 import { Analytics } from "@vercel/analytics/react";
 function App() {
 
@@ -104,7 +105,7 @@ function App() {
 
       <Analytics />
       <Footer />
-
+      <MadeBy />    
     </>
   )
 }

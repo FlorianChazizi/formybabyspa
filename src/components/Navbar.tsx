@@ -49,8 +49,15 @@ export default function Navbar() {
             <div className="dropdown-menu">
               <a href="/hydrotherapy">Υδροθεραπεία</a>
               <a href="/massage">Βρεφικό Μασάζ</a>
+              <a href="/party">Παιδικό Πάρτυ</a>
               <a href="/tiny-feet-big-steps">Tiny Feet Big Steps</a>
-              <a href="/party">Birthday Party</a>
+              <a href="/family-tub">Family Tub</a>
+              <a href="/fit-for-birth">Fit For Birth</a>
+              <a href="/fit-after-birth">Fit After Birth</a>
+              <a href="/yoga-mama-mwro">Yoga Μαμά Μωρό</a>
+              <a href="/proetimasia-gia-thn-genna">Προετοιμασία για την Γέννα</a>
+              <a href="/mathimata-thilasmou">Μαθήματα Θηλασμού</a>
+              <a href="/mathimata-vrefikis-malaxis">Μαθήματα Βρεφικής Μάλαξης</a>
             </div>
           </div>
 

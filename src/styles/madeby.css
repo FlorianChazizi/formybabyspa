@@ -1,0 +1,52 @@
+.made-by-notice {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.made-by-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+
+}
+
+.made-by-link {
+    background-color: rgb(0, 0, 0);
+  color: #ffffff; 
+  padding: 10px 15px;
+  border-radius: 25px;
+          border: 1px solid black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+}
+
+.made-by-link:hover {
+      background-color: rgb(255, 255, 255);
+        color: #000000; 
+        border: 1px solid black;
+  text-decoration: none;
+}
+
+
+.triquetra-symbol {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-top: 0.5rem;
+  display: inline-block;
+  animation: spin 6s linear infinite;
+}
+/* Rotation animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
