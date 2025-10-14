@@ -49,7 +49,7 @@ export default function Navbar() {
             <div className="dropdown-menu">
               <a href="/hydrotherapy">Υδροθεραπεία</a>
               <a href="/massage">Βρεφικό Μασάζ</a>
-              <a href="/party">Παιδικό Πάρτυ</a>
+              <a href="/party">Spa Party</a>
               <a href="/tiny-feet-big-steps">Tiny Feet Big Steps</a>
               <a href="/family-tub">Family Tub</a>
               <a href="/fit-for-birth">Fit For Birth</a>

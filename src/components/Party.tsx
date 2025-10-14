@@ -19,7 +19,7 @@ export default function PartyPage() {
       <div className="hero">
         <img src={partyImg} alt="Baby Spa Party" loading="lazy" />
         <div className="hero-overlay">
-          <h1>Birthday Party</h1>
+          <h1>Spa Party</h1>
         </div>
       </div>
 
@@ -53,12 +53,10 @@ export default function PartyPage() {
 
         </ul>
 
-        <h3>Διάρκεια:</h3>
-        <ul>
-          <li>Έως 6 παιδάκια: 2 ώρες</li>
-          <li>Έως 8 παιδάκια: 2,5 ώρες</li>
-          <li>Έως 10 παιδάκια: 3 ώρες</li>
-        </ul>
+        <p>
+          <b>Διάρκεια:</b><br />
+         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
+        </p>
               <img src={party1Image} alt="Baby Spa Party - Πακέτο 1" className="package-image"  loading="lazy"/>
 
       {/* Πακέτο 2 */}
@@ -80,9 +78,7 @@ export default function PartyPage() {
         </ul>
         <p>
           <b>Διάρκεια:</b><br />
-          Έως 6 παιδάκια: 2,5 ώρες<br />
-          Έως 8 παιδάκια: 3 ώρες<br />
-          Έως 10 παιδάκια: 3 ώρες
+         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
         <img src={party2Image} alt="Baby Spa Party - Πακέτο 2" className="package-image"  loading="lazy"/>
 
@@ -98,8 +94,7 @@ export default function PartyPage() {
         </ul>
         <p>
           <b>Διάρκεια:</b><br />
-          Έως 6 παιδάκια: 1 ώρα<br />
-          Έως 10 παιδάκια: 1,5 ώρα
+         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
         <img src={party3Image} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>
 
@@ -107,17 +102,14 @@ export default function PartyPage() {
         <h3>Πακέτο 4 “Boys Bubble Party” 🎉</h3>
         <ul>
           <li>Cool μουσική &amp; μαγιό για τζακούζι</li>
-          <li>Ντύνονται super ήρωες</li>
           <li>Χορός &amp; καραόκε με αγαπημένα τραγούδια</li>
-          <li>Δωράκι-έκπληξη για τον εορτάζοντα</li>
           <li>Στολισμός χώρου με θεματικά μπαλόνια</li>
           <li>Menu: Cupcakes &amp; χυμό</li>
           <li>Ηλεκτρονικές προσκλήσεις</li>
         </ul>
         <p>
-          <b>Διάρκεια &amp; Τιμή:</b><br />
-          Έως 6 παιδάκια: 2 ώρες<br />
-          Έως 10 παιδάκια: 2,5 ώρες
+          <b>Διάρκεια:</b><br />
+         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
         <br />
         <h2> * Απο 6 χρονών και άνω</h2>
