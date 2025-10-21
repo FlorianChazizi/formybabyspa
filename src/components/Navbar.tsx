@@ -58,6 +58,7 @@ export default function Navbar() {
               <a href="/proetimasia-gia-thn-genna">Προετοιμασία για την Γέννα</a>
               <a href="/mathimata-thilasmou">Μαθήματα Θηλασμού</a>
               <a href="/mathimata-vrefikis-malaxis">Μαθήματα Βρεφικής Μάλαξης</a>
+              <a href="/ksemiroma">Ξεμύρωμα</a>
             </div>
           </div>
 
