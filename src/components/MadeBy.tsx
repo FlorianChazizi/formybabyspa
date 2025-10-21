@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/madeby.css";
-import Triquetra from '../assets/triquetra.png';
 const MadeBy: React.FC = () => {
   return (
     <div className="made-by-notice">
@@ -16,9 +15,6 @@ const MadeBy: React.FC = () => {
         </a>
         
       </p>
-            {/* Triquetra symbol (Unicode version) */}
-      <div className="triquetra-symbol"><img src={Triquetra} /></div>
-      {/* Alternatively, you could use an SVG triquetra logo instead */}
     </div>
   );
 };
