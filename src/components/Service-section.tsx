@@ -15,6 +15,7 @@ import proetimasiagennas from "../assets/Προετοιμασία για τον 
 import FitForBirth from '../assets/Fit for birth 1.jpg';
 import FitAfterBirth from '../assets/Fit after birth.jpg';
 import YogaMamaMwro from '../assets/Yoga μαμά & παιδί.jpg';
+import Ksemiroma2 from '../assets/ksemiroma2.jpg';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -126,6 +127,13 @@ description: `Είστε έγκυος και θέλετε να κρατήσετ�
     link: "/mathimata-vrefikis-malaxis",
     image: vrefiki,
     bgClass: "pink-bg",
+  },
+  {
+    icon: Footprints,
+    title: "Ξεμύρωμα",
+    description: "Ξεμύρωμα | Η παράδοση συναντά τη φροντίδα",
+    link: "/ksemiroma",
+    image: Ksemiroma2,
   }
 ];
 
