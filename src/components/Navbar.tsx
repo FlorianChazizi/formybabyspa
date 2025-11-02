@@ -65,7 +65,7 @@ export default function Navbar() {
           </div>
 
           <a href="#who-we-are" className={`navlinks ${isScrolled ? 'scrolled' : ''}`} data-aos="fade-up" data-aos-duration="1400">Σχετικά με εμάς</a>
-          <a href="/gallery" className={`navlinks ${isScrolled ? 'scrolled' : ''}`} data-aos="fade-up" data-aos-duration="1600">Gallery</a>
+          <a href="/gallery" className={`navlinks ${isScrolled ? 'scrolled' : ''}`} data-aos="fade-up" data-aos-duration="1600">Portfolio</a>
           <a href="#radevou" className={`navlinks ${isScrolled ? 'scrolled' : ''} contact`} data-aos="fade-up" data-aos-duration="1800">Κλείσε Ραντεβού</a>
         </div>
 
@@ -114,7 +114,7 @@ export default function Navbar() {
           )}
 
           <a href="#who-we-are" onClick={() => setIsOpen(false)}>Σχετικά με εμάς</a>
-          <a href="/gallery" onClick={() => setIsOpen(false)}>Gallery</a>
+          <a href="/gallery" onClick={() => setIsOpen(false)}>Portfolio</a>
           <a href="#radevou" className="contact" onClick={() => setIsOpen(false)}>Κλείσε Ραντεβού</a>
 
           <div className="mobile-menu-socials">

@@ -8,6 +8,14 @@ import BabySpa7 from "../assets/babyspa7.jpeg";
 import BabySpa8 from "../assets/babyspa8.jpeg";
 import BabySpa9 from "../assets/babyspa9.jpeg";
 import BabySpa10 from "../assets/babyspa10.jpeg";
+import Baby1 from "../assets/baby1.jpeg";
+import MathimataThilasmou from "../assets/Μαθημα θημασού.jpg";
+import GalleryPhoto1 from "../assets/βρεφική μάλαξη 3.jpg";
+import GalleryPhoto2 from "../assets/βρεφική μάλαξη 2.jpg";
+import GalleryPhoto3 from "../assets/βρεφική μάλαξη 1.jpg";
+import GalleryPhoto4 from "../assets/Προετοιμασία για τον τοκετό.jpg";
+
+
 import HeroGallery from "../assets/herogallery.jpeg";
 import "../styles/gallery.css";
 import BubblesBackground from "./BubblesBackground";
@@ -23,6 +31,14 @@ export default function SpaPage() {
         { src: BabySpa8, alt: "Our cozy spa environment" },
         { src: BabySpa9, alt: "Our cozy spa environment" },
         { src: BabySpa10, alt: "Our cozy spa environment" },
+        { src: Baby1, alt: "Our cozy spa environment" },
+        { src: MathimataThilasmou, alt: "Our cozy spa environment" },
+        { src: GalleryPhoto1, alt: "Our cozy spa environment" },
+        { src: GalleryPhoto2, alt: "Our cozy spa environment" },
+        { src: GalleryPhoto3, alt: "Our cozy spa environment" },
+        { src: GalleryPhoto4, alt: "Our cozy spa environment" },
+
+
     ];
 
     return (
