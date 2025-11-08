@@ -1,12 +1,12 @@
-import partyImg from "../assets/Spa Party.jpg"; // replace with your image
+import partyImg from "../assets/Spa Party.jpg"; 
 import "../styles/party.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import party1Image from "../assets/section1.jpeg";     // image between package 1 & 2
-import party2Image from "../assets/section2.jpeg";     // image between package 2 & 3
-import party3Image from "../assets/section3.jpeg";     // image between package 3 & 4
+// import party1Image from "../assets/section1.jpeg";    
+// import party2Image from "../assets/section2.jpeg";     
+import party3Image from "../assets/section3.jpeg";     
 export default function PartyPage() {
   const { pathname } = useLocation();
 
@@ -54,10 +54,10 @@ export default function PartyPage() {
         </ul>
 
         <p>
-          <b>Διάρκεια:</b><br />
+          
          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-              <img src={party1Image} alt="Baby Spa Party - Πακέτο 1" className="package-image"  loading="lazy"/>
+              {/* <img src={party1Image} alt="Baby Spa Party - Πακέτο 1" className="package-image"  loading="lazy"/> */}
 
       {/* Πακέτο 2 */}
         <h3>Πακέτο 2 “Μαγικά Γενέθλια” ✨</h3>
@@ -77,10 +77,10 @@ export default function PartyPage() {
           <li>Ηλεκτρονικές προσκλήσεις</li>
         </ul>
         <p>
-          <b>Διάρκεια:</b><br />
+
          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-        <img src={party2Image} alt="Baby Spa Party - Πακέτο 2" className="package-image"  loading="lazy"/>
+        {/* <img src={party2Image} alt="Baby Spa Party - Πακέτο 2" className="package-image"  loading="lazy"/> */}
 
         {/* Πακέτο 3 */}
         <h3>Πακέτο 3 “Mini Party” ✨</h3>
@@ -93,7 +93,6 @@ export default function PartyPage() {
           <li>Μασάζ με αρωματική, απαλή κρεμούλα</li>
         </ul>
         <p>
-          <b>Διάρκεια:</b><br />
          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
         <img src={party3Image} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>

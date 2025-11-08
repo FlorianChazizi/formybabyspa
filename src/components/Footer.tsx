@@ -54,9 +54,18 @@ export default function Footer() {
   <ul className="footer-list">
     {[
       { name: "Ύδροθεραπεία", url: "/hydrotherapy" },
-      { name: "Βρεφικό Μασάζ", url: "/massage" },
-      { name: "Baby Spa", url: "#service3" },
-      { name: "Birthday Party", url: "/party" },
+      { name: "Βρεφική Μάλαξη", url: "/massage" },
+      { name: "Spa Party | Γενέθλια", url: "/party" },
+      { name: "Tiny Feet Big Steps | 6 εβδομάδες", url: "/tiny-feet-big-steps" },
+      { name: "Family Tub | Υδροθεραπεία για όλη την οικογένεια", url: "/family-tub" },
+      { name: "Fit For Birth", url: "/fit-for-birth" },
+      { name: "Fit After Birth", url: "/fit-after-birth" },
+      { name: "Yoga Μαμά Μωρό", url: "/yoga-mama-mwro" },
+      { name: "Προετοιμασία για την Γέννα", url: "/proetimasia-gia-thn-genna" },
+      { name: "Μαθήματα Θηλασμού", url: "/mathimata-thilasmou" },
+      { name: "Μαθήματα Βρεφικής Μάλαξης", url: "/mathimata-vrefikis-malaxis" },
+      { name: "Ξεμύρωμα", url: "/ksemiroma" },
+
     ].map(service => (
       <li className="service-link" key={service.name}>
         <a

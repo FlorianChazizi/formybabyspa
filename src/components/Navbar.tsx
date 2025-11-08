@@ -50,7 +50,7 @@ export default function Navbar() {
             </a>
             <div className="dropdown-menu" >
               <a href="/hydrotherapy">Υδροθεραπεία</a>
-              <a href="/massage">Βρεφικό Μασάζ</a>
+              <a href="/massage">Βρεφική Μάλαξη</a>
               <a href="/party">Spa Party</a>
               <a href="/tiny-feet-big-steps">Tiny Feet Big Steps</a>
               <a href="/family-tub">Family Tub</a>
@@ -99,7 +99,7 @@ export default function Navbar() {
           {isServicesOpen && (
             <div className="mobile-dropdown">
               <a href="/hydrotherapy" onClick={() => setIsOpen(false)}>Υδροθεραπεία</a>
-              <a href="/massage" onClick={() => setIsOpen(false)}>Βρεφικό Μασάζ</a>
+              <a href="/massage" onClick={() => setIsOpen(false)}>Βρεφική Μάλαξη</a>
               <a href="/party" onClick={() => setIsOpen(false)}>Spa Party</a>
               <a href="/tiny-feet-big-steps" onClick={() => setIsOpen(false)}>Tiny Feet Big Steps</a>
               <a href="/family-tub" onClick={() => setIsOpen(false)}>Family Tub</a>
