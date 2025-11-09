@@ -39,7 +39,6 @@ export default function PartyPage() {
         <p>Θέλετε να γιορτάσετε τα γενέθλια ή μια ξεχωριστή στιγμή του παιδιού σας
           με έναν μοναδικό και αξέχαστο τρόπο;
           Το Spa Party είναι η ιδανική επιλογή!</p>
-
         <p>
           Το Spa Party δεν είναι απλώς μια γιορτή…είναι μια εμπειρία που μένει χαραγμένη
           στην καρδιά!
@@ -61,13 +60,7 @@ export default function PartyPage() {
           <li>Στολισμός χώρου με θεματικά μπαλόνια</li>
           <li><b>Menu</b>: Cupcakes &amp; χυμό</li>
           <li>Ηλεκτρονικές προσκλήσεις</li>
-
         </ul>
-
-        <p>
-
-          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
-        </p>
         <img src={SpaParty1} alt="Baby Spa Party - Πακέτο 1" className="package-image" loading="lazy" />
 
         {/* Πακέτο 2 */}
@@ -87,10 +80,6 @@ export default function PartyPage() {
           <li>Menu: Cupcakes &amp; χυμό</li>
           <li>Ηλεκτρονικές προσκλήσεις</li>
         </ul>
-        <p>
-
-          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
-        </p>
         <img src={SpaParty2} alt="Baby Spa Party - Πακέτο 2" className="package-image" loading="lazy" />
 
         {/* Πακέτο 3 */}
@@ -103,9 +92,6 @@ export default function PartyPage() {
           <li>Χτένισμα για την εορτάζουσα και φίλες</li>
           <li>Μασάζ με αρωματική, απαλή κρεμούλα</li>
         </ul>
-        <p>
-          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
-        </p>
         <img src={SpaParty3} alt="Baby Spa Party - Πακέτο 3" className="package-image" loading="lazy" />
 
         {/* Πακέτο 4 */}
@@ -117,11 +103,11 @@ export default function PartyPage() {
           <li>Menu: Cupcakes &amp; χυμό</li>
           <li>Ηλεκτρονικές προσκλήσεις</li>
         </ul>
+        <br />
+        <h2> * Απο 6 χρονών και άνω</h2>
         <p>
           Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-        <br />
-        <h2> * Απο 6 χρονών και άνω</h2>
         <img src={SpaParty4} alt="Baby Spa Party - Πακέτο 3" className="package-image" loading="lazy" />
       </div>
 
