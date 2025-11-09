@@ -1,4 +1,9 @@
 import partyImg from "../assets/Spa Party.jpg"; 
+import SpaParty1 from "../assets/SpaPartyImage1.jpeg";
+import SpaParty2 from "../assets/SpaPartyImage2.jpeg"
+import SpaParty3 from "../assets/SpaPartyImage3.jpeg"
+import SpaParty4 from "../assets/SpaPartyImage4.jpg"
+
 import "../styles/party.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
@@ -6,7 +11,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 // import party1Image from "../assets/section1.jpeg";    
 // import party2Image from "../assets/section2.jpeg";     
-import party3Image from "../assets/section3.jpeg";     
+// import party3Image from "../assets/section3.jpeg";     
 export default function PartyPage() {
   const { pathname } = useLocation();
 
@@ -57,7 +62,7 @@ export default function PartyPage() {
           
          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-              {/* <img src={party1Image} alt="Baby Spa Party - Πακέτο 1" className="package-image"  loading="lazy"/> */}
+              <img src={SpaParty1} alt="Baby Spa Party - Πακέτο 1" className="package-image"  loading="lazy"/>
 
       {/* Πακέτο 2 */}
         <h3>Πακέτο 2 “Μαγικά Γενέθλια” ✨</h3>
@@ -80,7 +85,7 @@ export default function PartyPage() {
 
          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-        {/* <img src={party2Image} alt="Baby Spa Party - Πακέτο 2" className="package-image"  loading="lazy"/> */}
+        <img src={SpaParty2} alt="Baby Spa Party - Πακέτο 2" className="package-image"  loading="lazy"/>
 
         {/* Πακέτο 3 */}
         <h3>Πακέτο 3 “Mini Party” ✨</h3>
@@ -95,7 +100,7 @@ export default function PartyPage() {
         <p>
          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-        <img src={party3Image} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>
+        <img src={SpaParty3} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>
 
         {/* Πακέτο 4 */}
         <h3>Πακέτο 4 “Boys Bubble Party” 🎉</h3>
@@ -112,6 +117,8 @@ export default function PartyPage() {
         </p>
         <br />
         <h2> * Απο 6 χρονών και άνω</h2>
+                <img src={SpaParty4} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>
+
       </div>
 
       <BubblesBackground />
