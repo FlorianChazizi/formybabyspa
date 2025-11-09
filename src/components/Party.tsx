@@ -1,4 +1,4 @@
-import partyImg from "../assets/Spa Party.jpg"; 
+import partyImg from "../assets/Spa Party.jpg";
 import SpaParty1 from "../assets/SpaPartyImage1.jpeg";
 import SpaParty2 from "../assets/SpaPartyImage2.jpeg"
 import SpaParty3 from "../assets/SpaPartyImage3.jpeg"
@@ -30,15 +30,21 @@ export default function PartyPage() {
 
       {/* Content Section */}
       <div className="content">
-        <h2>Τι είναι το Baby Spa Party;</h2>
+        <h2>Παιδικό Spa Party</h2>
         <p>
-          Θέλετε να γιορτάσετε τα γενέθλια ή μια ξεχωριστή στιγμή του μωρού σας με έναν μοναδικό και
-          αξέχαστο τρόπο; Το <b>Baby Spa Party</b> είναι η ιδανική επιλογή! Δημιουργήστε όμορφες
-          αναμνήσεις μαζί με φίλους και συγγενείς σε έναν χώρο που συνδυάζει παιχνίδι, χαλάρωση και
-          ατελείωτη διασκέδαση.</p>
+          Θέλετε να γιορτάσετε τα γενέθλια ή μια ξεχωριστή στιγμή του παιδιού σας
+          με έναν μοναδικό και αξέχαστο τρόπο;
+          Το Spa Party είναι η ιδανική επιλογή!</p>
 
-        <p>Ανακαλύψτε τα μοναδικά μας πακέτα:</p>
+        <p>Θέλετε να γιορτάσετε τα γενέθλια ή μια ξεχωριστή στιγμή του παιδιού σας
+          με έναν μοναδικό και αξέχαστο τρόπο;
+          Το Spa Party είναι η ιδανική επιλογή!</p>
 
+        <p>
+          Το Spa Party δεν είναι απλώς μια γιορτή…είναι μια εμπειρία που μένει χαραγμένη
+          στην καρδιά!
+        </p>
+        <p> <b> Ανακαλύψτε τα μοναδικά μας πακέτα: </b></p>
         <h2>Πακέτο 1 “Μαγεία &amp; Χρώμα”</h2>
         <p>Η απόλυτη εμπειρία ομορφιάς και διασκέδασης για τις μικρές μας πριγκίπισσες!</p>
         <ul>
@@ -59,12 +65,12 @@ export default function PartyPage() {
         </ul>
 
         <p>
-          
-         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
-        </p>
-              <img src={SpaParty1} alt="Baby Spa Party - Πακέτο 1" className="package-image"  loading="lazy"/>
 
-      {/* Πακέτο 2 */}
+          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
+        </p>
+        <img src={SpaParty1} alt="Baby Spa Party - Πακέτο 1" className="package-image" loading="lazy" />
+
+        {/* Πακέτο 2 */}
         <h3>Πακέτο 2 “Μαγικά Γενέθλια” ✨</h3>
         <ul>
           <li>Χαλαρωτική μουσική &amp; ρόμπες, κορδέλες μαλλιών, πετσετούλες &amp; face mask</li>
@@ -83,9 +89,9 @@ export default function PartyPage() {
         </ul>
         <p>
 
-         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
+          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-        <img src={SpaParty2} alt="Baby Spa Party - Πακέτο 2" className="package-image"  loading="lazy"/>
+        <img src={SpaParty2} alt="Baby Spa Party - Πακέτο 2" className="package-image" loading="lazy" />
 
         {/* Πακέτο 3 */}
         <h3>Πακέτο 3 “Mini Party” ✨</h3>
@@ -98,9 +104,9 @@ export default function PartyPage() {
           <li>Μασάζ με αρωματική, απαλή κρεμούλα</li>
         </ul>
         <p>
-         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
+          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
-        <img src={SpaParty3} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>
+        <img src={SpaParty3} alt="Baby Spa Party - Πακέτο 3" className="package-image" loading="lazy" />
 
         {/* Πακέτο 4 */}
         <h3>Πακέτο 4 “Boys Bubble Party” 🎉</h3>
@@ -112,13 +118,11 @@ export default function PartyPage() {
           <li>Ηλεκτρονικές προσκλήσεις</li>
         </ul>
         <p>
-          <b>Διάρκεια:</b><br />
-         Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
+          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
         </p>
         <br />
         <h2> * Απο 6 χρονών και άνω</h2>
-                <img src={SpaParty4} alt="Baby Spa Party - Πακέτο 3" className="package-image"  loading="lazy"/>
-
+        <img src={SpaParty4} alt="Baby Spa Party - Πακέτο 3" className="package-image" loading="lazy" />
       </div>
 
       <BubblesBackground />
