@@ -1,6 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import { MapPin, Phone, Mail } from "lucide-react";
-
+import { services } from '../data/ServicesData';
 import "../styles/footer.css";
 
 export default function Footer() {
@@ -49,36 +49,22 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-<div>
-  <h4 className="footer-subheading">Services</h4>
-  <ul className="footer-list">
-    {[
-      { name: "Ύδροθεραπεία", url: "/hydrotherapy" },
-      { name: "Βρεφική Μάλαξη", url: "/massage" },
-      { name: "Spa Party | Γενέθλια", url: "/party" },
-      // { name: "Tiny Feet Big Steps | 6 εβδομάδες", url: "/tiny-feet-big-steps" },
-      { name: "Family Tub | Υδροθεραπεία για όλη την οικογένεια", url: "/family-tub" },
-      // { name: "Fit For Birth", url: "/fit-for-birth" },
-      // { name: "Fit After Birth", url: "/fit-after-birth" },
-      // { name: "Yoga Μαμά Μωρό", url: "/yoga-mama-mwro" },
-      { name: "Προετοιμασία για την Γέννα", url: "/proetimasia-gia-thn-genna" },
-      { name: "Μαθήματα Θηλασμού", url: "/mathimata-thilasmou" },
-      { name: "Μαθήματα Βρεφικής Μάλαξης", url: "/mathimata-vrefikis-malaxis" },
-      { name: "Ξεμύρωμα", url: "/ksemiroma" },
-
-    ].map(service => (
-      <li className="service-link" key={service.name}>
-        <a
-          href={service.url}
-          className="footer-link"
-          aria-label={`Υπηρεσίες, ${service.name}`}
-        >
-          {service.name}
-        </a>
-      </li>
-    ))}
-  </ul>
-</div>
+          <div>
+            <h4 className="footer-subheading">Services</h4>
+            <ul className="footer-list">
+              {services.map((service) => (
+                <li className="service-link" key={service.navTitle}>
+                  <a
+                    href={service.link}
+                    className="footer-link"
+                    aria-label={`Υπηρεσία: ${service.navTitle}`}
+                  >
+                    {service.navTitle}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Contact Info */}
           <div>

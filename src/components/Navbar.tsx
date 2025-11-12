@@ -5,6 +5,7 @@ import logo from '../assets/formybabyspa.png';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import { services } from '../data/ServicesData';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,18 +50,10 @@ export default function Navbar() {
               Υπηρεσίες <FaAngleDown className="dropdown-icon" />
             </a>
             <div className="dropdown-menu" >
-              <a href="/hydrotherapy">Υδροθεραπεία</a>
-              <a href="/massage">Βρεφική Μάλαξη</a>
-              <a href="/party">Spa Party</a>
-              {/* <a href="/tiny-feet-big-steps">Tiny Feet Big Steps</a> */}
-              <a href="/family-tub">Family Tub</a>
-              {/* <a href="/fit-for-birth">Fit For Birth</a>
-              <a href="/fit-after-birth">Fit After Birth</a>
-              <a href="/yoga-mama-mwro">Yoga Μαμά Μωρό</a> */}
-              <a href="/proetimasia-gia-thn-genna">Προετοιμασία για την Γέννα</a>
-              <a href="/mathimata-thilasmou">Μαθήματα Θηλασμού</a>
-              <a href="/mathimata-vrefikis-malaxis">Μαθήματα Βρεφικής Μάλαξης</a>
-              <a href="/ksemiroma">Ξεμύρωμα</a>
+              {services.map((service) => (
+                <a key={service.link} href={service.link}>
+                  {service.navTitle || service.title}    </a>
+              ))}
             </div>
           </div>
 
@@ -98,18 +91,10 @@ export default function Navbar() {
           {/* Mobile dropdown content */}
           {isServicesOpen && (
             <div className="mobile-dropdown">
-              <a href="/hydrotherapy" onClick={() => setIsOpen(false)}>Υδροθεραπεία</a>
-              <a href="/massage" onClick={() => setIsOpen(false)}>Βρεφική Μάλαξη</a>
-              <a href="/party" onClick={() => setIsOpen(false)}>Spa Party</a>
-              {/* <a href="/tiny-feet-big-steps" onClick={() => setIsOpen(false)}>Tiny Feet Big Steps</a> */}
-              <a href="/family-tub" onClick={() => setIsOpen(false)}>Family Tub</a>
-              {/* <a href="/fit-for-birth" onClick={() => setIsOpen(false)}>Fit For Birth</a>
-              <a href="/fit-after-birth" onClick={() => setIsOpen(false)}>Fit After Birth</a>
-              <a href="/yoga-mama-mwro" onClick={() => setIsOpen(false)}>Yoga Μαμά Μωρό</a> */}
-              <a href="/proetimasia-gia-thn-genna" onClick={() => setIsOpen(false)}>Προετοιμασία για την Γέννα</a>
-              <a href="/mathimata-thilasmou" onClick={() => setIsOpen(false)}>Μαθήματα Θηλασμού</a>
-              <a href="/mathimata-vrefikis-malaxis" onClick={() => setIsOpen(false)}>Μαθήματα Βρεφικής Μάλαξης</a>
-              <a href="/ksemiroma" onClick={() => setIsOpen(false)}>Ξεμύρωμα</a>
+              {services.map((service) => (
+                <a key={service.link} href={service.link}>
+                  {service.navTitle || service.title}    </a>
+              ))}
             </div>
           )}
 
