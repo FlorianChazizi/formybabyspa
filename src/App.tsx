@@ -16,11 +16,11 @@ import SpaPage from './components/SpaPage.tsx';
 import NotFound from './pages/NotFound.tsx';
 // import CollaborationInvite from './components/CollaborationInvite.tsx';
 import WhoWeAre from './components/WhoWeAre.tsx';
-import TinyFeetBigStepsPage from './components/TinyFeetBigSteps.tsx';
+// import TinyFeetBigStepsPage from './components/TinyFeetBigSteps.tsx';
 import FamilyTub from './components/FamilyTube.tsx';
-import FitForBirth from './components/FitForBirth.tsx';
-import FitAfterBirth from './components/FitAfterBirth.tsx';
-import YogaMamaMwro from './components/YogaMamaMwro.tsx';
+// import FitForBirth from './components/FitForBirth.tsx';
+// import FitAfterBirth from './components/FitAfterBirth.tsx';
+// import YogaMamaMwro from './components/YogaMamaMwro.tsx';
 import ProetimasiaGiaThnGenna from './components/ProetimasiaGiaThnGenna.tsx'; 
 import MathimataThilasmou from './components/MathimataThilasmou.tsx';
 import MathimataVrefikisMalaxis from './components/MathimataVrefikisMalaxis.tsx';
@@ -70,26 +70,26 @@ function App() {
           path="*"
           element={<NotFound />}
         />
-        <Route
+        {/* <Route
           path="/tiny-feet-big-steps"
           element={<TinyFeetBigStepsPage />}
-        />
+        /> */}
         <Route
           path="/family-tub"
           element={<FamilyTub />}
         />
-        <Route
+        {/* <Route
           path="/fit-for-birth"
           element={<FitForBirth />}
         />
         <Route
           path="/fit-after-birth"
           element={<FitAfterBirth />}
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/yoga-mama-mwro"
           element={<YogaMamaMwro />}
-        />
+        /> */}
         <Route
           path="/proetimasia-gia-thn-genna"
           element={<ProetimasiaGiaThnGenna />}

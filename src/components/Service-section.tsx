@@ -8,13 +8,13 @@ import serviceparty from '../assets/Spa Party.jpg';
 // import Balonia from '../assets/balonia.jpeg';
 // import Stolismos from '../assets/stolismos.jpeg';
 import FamilyTub from '../assets/familytub.jpeg';
-import tfbs from '../assets/Tiny feet big steps 1.png';
+// import tfbs from '../assets/Tiny feet big steps 1.png';
 import vrefiki from "../assets/Μάθημα βρεφικής μάλαξης.jpg";
 import mathimatathilasmou from "../assets/Μαθημα θημασού.jpg";
 import proetimasiagennas from "../assets/Προετοιμασία για τον τοκετό.jpg";
-import FitForBirth from '../assets/Fit for birth 1.jpg';
-import FitAfterBirth from '../assets/Fit after birth.jpg';
-import YogaMamaMwro from '../assets/Yoga μαμά & παιδί.jpg';
+// import FitForBirth from '../assets/Fit for birth 1.jpg';
+// import FitAfterBirth from '../assets/Fit after birth.jpg';
+// import YogaMamaMwro from '../assets/Yoga μαμά & παιδί.jpg';
 import Ksemiroma2 from '../assets/ksemiroma2.jpg';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -48,14 +48,14 @@ const services = [
     bgClass: "pink-bg",
     link: "/party",
   },
-  {
-    icon: Footprints,
-    title: "Tiny Feet Big Steps | 6 εβδομάδες",
-    description: `Ανακαλύψτε το πιο διασκεδαστικό και αναπτυξιακό πρόγραμμα για βρέφη από 4 έως 12 μηνών! Το Tiny Feet Big Steps συνδυάζει παιχνίδι, μουσική, χορό και ειδικά σχεδιασμένες δραστηριότητες για να ενισχύσει την ψυχοκινητική και συναισθηματική ανάπτυξη του μωρού σας, ενώ προσφέρει μοναδικές στιγμές σύνδεσης με τη μαμά ή τον φροντιστή.`,
-    link: "/tiny-feet-big-steps",
-    image: tfbs,
-    bgClass: "pink-bg",
-  },
+  // {
+  //   icon: Footprints,
+  //   title: "Tiny Feet Big Steps | 6 εβδομάδες",
+  //   description: `Ανακαλύψτε το πιο διασκεδαστικό και αναπτυξιακό πρόγραμμα για βρέφη από 4 έως 12 μηνών! Το Tiny Feet Big Steps συνδυάζει παιχνίδι, μουσική, χορό και ειδικά σχεδιασμένες δραστηριότητες για να ενισχύσει την ψυχοκινητική και συναισθηματική ανάπτυξη του μωρού σας, ενώ προσφέρει μοναδικές στιγμές σύνδεσης με τη μαμά ή τον φροντιστή.`,
+  //   link: "/tiny-feet-big-steps",
+  //   image: tfbs,
+  //   bgClass: "pink-bg",
+  // },
   {
     icon: Footprints,
     title: "Family Tub | Υδροθεραπεία για όλη την οικογένεια",
@@ -64,39 +64,39 @@ const services = [
     image: FamilyTub,
     bgClass: "pink-bg",
   },
-  {
-    icon: Footprints,
-    title: "Fit For Birth",
-    description: `Είστε έγκυος και θέλετε να κρατήσετε το σώμα σας σε φόρμα, ενώ
-προετοιμάζεστε για τον τοκετό; Το Fit for Birth είναι το μάθημα που συνδυάζει
-άσκηση, χαλάρωση και διασκέδαση, ειδικά σχεδιασμένο για μέλλουσες μαμάδες.`,
-    link: "/fit-for-birth",
-    image: FitForBirth,
-    bgClass: "pink-bg",
-  },
-  {
-    icon: Footprints,
-    title: "Fit After Birth",
-    description: `Μόλις γεννήσατε και θέλετε να επιστρέψετε σταδιακά στη φόρμα σας;
-Το Fit after Birth είναι το ιδανικό μάθημα για νέες μαμάδες που θέλουν να
-αφιερώσουν χρόνο στον εαυτό τους, να ενδυναμώσουν το σώμα τους και να
-νιώσουν ξανά δυνατές.`,
-    link: "/fit-after-birth",
-    image: FitAfterBirth,
-    bgClass: "pink-bg",
-  },
-  {
-    icon: Footprints,
-    title: "Yoga Μαμά Μωρό",
-    description: `Οι πρώτες εβδομάδες με το μωρό είναι μαγικές, αλλά ταυτόχρονα απαιτητικές.
-Μεταξύ θηλασμού, αλλαγής πάνας και ελάχιστου ύπνου, ο χρόνος για τον εαυτό
-σας φαίνεται να εξαφανίζεται. Η γιόγκα για μαμάδες και μωρά είναι μια ευκαιρία
-να χαλαρώσετε μαζί, να αναζωογονηθείτε και να απολαύσετε στιγμές σύνδεσης με
-το μωρό σας.`,
-    link: "/yoga-mama-mwro",
-    image: YogaMamaMwro,
-    bgClass: "pink-bg",
-  },
+//   {
+//     icon: Footprints,
+//     title: "Fit For Birth",
+//     description: `Είστε έγκυος και θέλετε να κρατήσετε το σώμα σας σε φόρμα, ενώ
+// προετοιμάζεστε για τον τοκετό; Το Fit for Birth είναι το μάθημα που συνδυάζει
+// άσκηση, χαλάρωση και διασκέδαση, ειδικά σχεδιασμένο για μέλλουσες μαμάδες.`,
+//     link: "/fit-for-birth",
+//     image: FitForBirth,
+//     bgClass: "pink-bg",
+//   },
+//   {
+//     icon: Footprints,
+//     title: "Fit After Birth",
+//     description: `Μόλις γεννήσατε και θέλετε να επιστρέψετε σταδιακά στη φόρμα σας;
+// Το Fit after Birth είναι το ιδανικό μάθημα για νέες μαμάδες που θέλουν να
+// αφιερώσουν χρόνο στον εαυτό τους, να ενδυναμώσουν το σώμα τους και να
+// νιώσουν ξανά δυνατές.`,
+//     link: "/fit-after-birth",
+//     image: FitAfterBirth,
+//     bgClass: "pink-bg",
+//   },
+//   {
+//     icon: Footprints,
+//     title: "Yoga Μαμά Μωρό",
+//     description: `Οι πρώτες εβδομάδες με το μωρό είναι μαγικές, αλλά ταυτόχρονα απαιτητικές.
+// Μεταξύ θηλασμού, αλλαγής πάνας και ελάχιστου ύπνου, ο χρόνος για τον εαυτό
+// σας φαίνεται να εξαφανίζεται. Η γιόγκα για μαμάδες και μωρά είναι μια ευκαιρία
+// να χαλαρώσετε μαζί, να αναζωογονηθείτε και να απολαύσετε στιγμές σύνδεσης με
+// το μωρό σας.`,
+//     link: "/yoga-mama-mwro",
+//     image: YogaMamaMwro,
+//     bgClass: "pink-bg",
+//   },
   {
     icon: Footprints,
     title: "Προετοιμασία για την Γέννα",
