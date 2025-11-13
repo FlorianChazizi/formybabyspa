@@ -7,6 +7,7 @@ import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
 import ksemiroma1 from '../assets/ksemiroma1.jpeg';
 import ksemiroma2 from '../assets/ksemiroma2.jpg';
+import ksemiroma3 from '../assets/ξεμύρωμα (Large).jpeg';
 export default function Ksemiroma() {
     const { pathname } = useLocation();
 
@@ -29,7 +30,7 @@ export default function Ksemiroma() {
                 </p>
                 <img
                     src={ksemiroma1}
-                    alt="Photo 1"
+                    alt="Ξεμύρωμα"
                     className="photo"
                 />
                 <p>
@@ -43,8 +44,8 @@ export default function Ksemiroma() {
                     μια πράξη γεμάτη <b>Αγάπη</b>, απλότητα και παράδοση.
                 </p>
                 <img
-                    src={ksemiroma2}
-                    alt="Photo 2"
+                    src={ksemiroma3}
+                    alt="Ξεμύρωμα"
                     className="photo"
                 />
                 <p>
@@ -55,6 +56,11 @@ export default function Ksemiroma() {
                 <p>
                     Γιατί κάθε σταγόνα νερού είναι μια <b>Ευλογία</b>, κάθε βλέμμα ένα μήνυμα <b>Αγάπης</b>, κάθε άγγιγμα μια πράξη <b>Σεβασμού</b>, και κάθε χαμόγελο μια απόδειξη <b>Πίστης</b> στο θαύμα της ζωής.
                 </p>
+                <img
+                    src={ksemiroma2}
+                    alt="Ξεμύρωμα"
+                    className="photo"
+                />
             </div>
             <BubblesBackground />
             <ContactForm />
