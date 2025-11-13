@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import hydroBanner from "../assets/ksemiroma2.jpg";
-import "../styles/hydrotherapy.css";
+import "../styles/party.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
 import ksemiroma1 from '../assets/ksemiroma1.jpeg';
@@ -31,7 +31,7 @@ export default function Ksemiroma() {
                 <img
                     src={ksemiroma1}
                     alt="Ξεμύρωμα"
-                    className="photo"
+                    className="package-image"
                 />
                 <p>
                     Σύμφωνα με την ορθόδοξη παράδοση, τρεις μέρες μετά τη βάπτιση, οι νονοί συνηθίζεται να είναι παρόντες στο πρώτο μπάνιο του παιδιού.
@@ -46,7 +46,7 @@ export default function Ksemiroma() {
                 <img
                     src={ksemiroma3}
                     alt="Ξεμύρωμα"
-                    className="photo"
+                    className="package-image"
                 />
                 <p>
                     Κι εμείς είμαστε εδώ για να σας προσφέρουμε μια ολοκληρωμένη εμπειρία φροντίδας και συγκίνησης.
@@ -59,7 +59,7 @@ export default function Ksemiroma() {
                 <img
                     src={ksemiroma2}
                     alt="Ξεμύρωμα"
-                    className="photo"
+                    className="package-image"
                 />
             </div>
             <BubblesBackground />
