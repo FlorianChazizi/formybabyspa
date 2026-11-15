@@ -109,7 +109,7 @@ export default function PartyPage() {
         <img src={SpaParty3} alt="Baby Spa Party - Πακέτο 3" className="package-image" loading="lazy" />
 
         {/* Πακέτο 4 */}
-        <h3>Πακέτο 4 “Party αποθεραπείας για μικρούς αθλητές”</h3>
+        {/* <h3>Πακέτο 4 “Party αποθεραπείας για μικρούς αθλητές”</h3>
         <p>
           Το πιο δροσερό και διασκεδαστικό πάρτι για αγόρια και κορίτσια που αγαπούν τη
           δράση, τη χαρά και τη διασκέδαση χωρίς τέλος!
@@ -125,7 +125,7 @@ export default function PartyPage() {
           <li>Στολισμός χώρου με θεματικά μπαλόνια</li>
           <li>Menu: Cupcakes &amp; χυμό</li>
           <li>Ηλεκτρονικές προσκλήσεις</li>
-        </ul>
+        </ul> */}
         <br />
 
         <h3> Extra Υπηρεσίες </h3>

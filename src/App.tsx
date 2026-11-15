@@ -21,8 +21,8 @@ import FamilyTub from './components/FamilyTube.tsx';
 // import FitForBirth from './components/FitForBirth.tsx';
 // import FitAfterBirth from './components/FitAfterBirth.tsx';
 // import YogaMamaMwro from './components/YogaMamaMwro.tsx';
-import ProetimasiaGiaThnGenna from './components/ProetimasiaGiaThnGenna.tsx'; 
-import MathimataThilasmou from './components/MathimataThilasmou.tsx';
+// import ProetimasiaGiaThnGenna from './components/ProetimasiaGiaThnGenna.tsx'; 
+// import MathimataThilasmou from './components/MathimataThilasmou.tsx';
 import MathimataVrefikisMalaxis from './components/MathimataVrefikisMalaxis.tsx';
 import Ksemiroma from './components/Ksemiroma.tsx';
 import MadeBy from './components/MadeBy.tsx';
@@ -90,14 +90,14 @@ function App() {
           path="/yoga-mama-mwro"
           element={<YogaMamaMwro />}
         /> */}
-        <Route
+        {/* <Route
           path="/proetimasia-gia-thn-genna"
           element={<ProetimasiaGiaThnGenna />}
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/mathimata-thilasmou"
           element={<MathimataThilasmou />}
-        />
+        /> */}
         <Route
           path="/mathimata-vrefikis-malaxis"
           element={<MathimataVrefikisMalaxis />}
