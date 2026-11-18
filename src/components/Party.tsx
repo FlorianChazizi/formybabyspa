@@ -1,28 +1,45 @@
 import partyImg from "../assets/Spa Party.jpg";
 import SpaParty1 from "../assets/SpaPartyImage1.jpeg";
-import SpaParty2 from "../assets/SpaPartyImage2.jpeg"
-import SpaParty3 from "../assets/SpaPartyImage3.jpeg"
-import SpaParty4 from "../assets/SpaPartyImage4.jpg"
+import SpaParty2 from "../assets/SpaPartyImage2.jpeg";
+import SpaParty3 from "../assets/SpaPartyImage3.jpeg";
+import SpaParty4 from "../assets/SpaPartyImage4.jpg";
 
 import "../styles/party.css";
 import ContactForm from "./Contact-form";
 import BubblesBackground from "./BubblesBackground";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-// import party1Image from "../assets/section1.jpeg";    
-// import party2Image from "../assets/section2.jpeg";     
-// import party3Image from "../assets/section3.jpeg";     
+
+const partyItems = [
+  { icon: "🎀", text: "Ρόμπες και αξεσουάρ" },
+  { icon: "🫧", text: "Face mask" },
+  { icon: "✨", text: "Beauty moments" },
+  { icon: "💅", text: "Παιδικό μανικιούρ & πεντικιούρ" },
+  { icon: "💄", text: "Απαλό παιδικό makeup & glitter" },
+  { icon: "💇‍♀️", text: "Χτένισμα" },
+  { icon: "🎶", text: "Χορό & Karaoke" },
+  { icon: "👑", text: "Πασαρέλα & Fashion Show" },
+  { icon: "🛁", text: "Jacuzzi, ανάλογα με το πακέτο" },
+  { icon: "🎨", text: "Δημιουργικές δραστηριότητες" },
+  { icon: "🎂", text: "Birthday moment" },
+  { icon: "🎈", text: "Στολισμό" },
+  { icon: "💌", text: "Ηλεκτρονικές προσκλήσεις" },
+];
+
+const partyPhotos = [SpaParty1, SpaParty2, SpaParty3, SpaParty4];
+
 export default function PartyPage() {
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return (
     <div className="service-page">
       {/* Hero Section */}
       <div className="hero">
-        <img src={partyImg} alt="Baby Spa Party" loading="lazy" />
+        <img src={partyImg} alt="Spa Party - For My Baby Spa" loading="lazy" />
         <div className="hero-overlay">
           <h1>Spa Party</h1>
         </div>
@@ -30,121 +47,51 @@ export default function PartyPage() {
 
       {/* Content Section */}
       <div className="content">
-        <h2>Spa Party</h2>
-        <p>
-          Αυτό το μοναδικό πάρτι ομορφιάς έχει σχεδιαστεί αποκλειστικά για
-          κορίτσια που λατρεύουν να περιποιούνται τον εαυτό τους και να νιώθουν σαν
-          μικρές πριγκίπισσες! Τα κορίτσια θα βυθιστούν σε έναν μαγικό κόσμο ομορφιάς,
-          με περιποιήσεις προσώπου, νύχια, μαλλιά και μακιγιάζ, μια εμπειρία που θα τους
-          μείνει αξέχαστη!</p>
+        <h2>Το πιο ξεχωριστό party experience για κορίτσια</h2>
 
-        <p>Η διασκεδαστική διαδικασία ξεκινά με το ντύσιμο. Οι μικρές κυρίες φορούν
-          ροζ σατέν ρόμπες και αξεσουάρ, νιώθοντας τη μαγεία της χαλάρωσης και της
-          πολυτέλειας.</p>
+        <p className="sp-lead">Θέλεις ένα πάρτι διαφορετικό από τα συνηθισμένα;</p>
         <p>
-          Με σκουφάκια, κορδέλες μαλλιών και πετσετούλες, είναι έτοιμες για μια μέρα
-          γεμάτη λάμψη, γέλιο και ομορφιά!
+          Στο <b>For My Baby Spa</b> δημιουργούμε ξεχωριστά Spa Parties για κορίτσια που
+          αγαπούν τη διασκέδαση, τη μουσική, τη δημιουργία και φυσικά… το pink mood! 🎀
+        </p>
+        <p>
+          Τα κορίτσια μεταμορφώνονται σε μικρές πριγκίπισσες και απολαμβάνουν μια γιορτή
+          γεμάτη χαμόγελα, περιποίηση, παιχνίδι και όμορφες στιγμές με τις φίλες τους.
         </p>
 
-        <p>
-          Σε έναν χώρο που συνδυάζει <b>χαλάρωση, διασκέδαση και δημιουργία
-            αναμνήσεων</b>, τα παιδιά ζουν μια εμπειρία διαφορετική από κάθε άλλη. Με τις
-          φίλες τους απολαμβάνουν μια γιορτή γεμάτη χαρά, ξεγνοιασιά και μαγεία. <br />
-          Το <b>Spa Party</b> δεν είναι απλώς μια γιορτή…είναι μια εμπειρία που μένει
-          χαραγμένη στην καρδιά!
-        </p>
-        <h2>Πακέτο 1 “Μαγεία &amp; Χρώμα”</h2>
-        <p>Η απόλυτη εμπειρία ομορφιάς και διασκέδασης για τις μικρές μας πριγκίπισσες!</p>
-
-        <ul>
-          <li>Χαλαρωτική μουσική για να ξεκινήσουμε</li>
-          <li>Ρόμπες, κορδέλες μαλλιών, ατομικές πετσετούλες &amp; face mask</li>
-          <li><b>Περιποίηση προσώπου</b>: μάσκα σοκολάτας ή γιαουρτιού &amp; φρέσκο αγγουράκι</li>
-          <li><b>Μανικιούρ &amp; πεντικιούρ</b> με παιδικά βερνίκια νερού</li>
-          <li>Απαλό μακιγιάζ με υποαλλεργικά παιδικά καλλυντικά &amp; Glitter</li>
-          <li>Χτένισμα για την εορτάζουσα και όλες τις φίλες</li>
-          <li>Μασάζ με αρωματική, απαλή κρεμούλα</li>
-          <li>Χορός και καραόκε</li>
-          <li>Πασαρέλα &amp; fashion show με αξεσουάρ μαλλιών και γυαλιά</li>
-          <li>Ένα ξεχωριστό δωράκι-έκπληξη για την εορτάζουσα</li>
-          <li>Στολισμός χώρου με θεματικά μπαλόνια</li>
-          <li><b>Menu</b>: Cupcakes &amp; χυμό</li>
-          <li>Ηλεκτρονικές προσκλήσεις</li>
+        <h2 className="sp-center">Τα πακέτα μας μπορούν να περιλαμβάνουν:</h2>
+        <ul className="sp-values">
+          {partyItems.map((item) => (
+            <li key={item.text}>
+              <span className="sp-icon" aria-hidden="true">{item.icon}</span>
+              <span>{item.text}</span>
+            </li>
+          ))}
         </ul>
-        <img src={SpaParty1} alt="Baby Spa Party - Πακέτο 1" className="package-image" loading="lazy" />
 
-        {/* Πακέτο 2 */}
-        <h3>Πακέτο 2 “Μαγικά Γενέθλια” ✨</h3>
-        <p>
-          Για μια εμπειρία γεμάτη λάμψη και…μπουρμπουλήθρες!
+        <p className="sp-note">
+          Κάθε πάρτι μπορεί να προσαρμοστεί στην ηλικία και στον αριθμό των παιδιών.
         </p>
-        <ul>
-          <li>Χαλαρωτική μουσική &amp; ρόμπες, κορδέλες μαλλιών, πετσετούλες &amp; face mask</li>
-          <li>Τζακούζι γεμάτο μουσική και μπουρμπουλήθρες</li>
-          <li>Περιποίηση προσώπου: μάσκα σοκολάτας ή γιαουρτιού &amp; φρέσκο αγγουράκι</li>
-          <li>Μανικιούρ &amp; πεντικιούρ με παιδικά βερνίκια νερού</li>
-          <li>Απαλό μακιγιάζ με υποαλλεργικά παιδικά καλλυντικά &amp; Glitter</li>
-          <li>Χτένισμα για την εορτάζουσα και φίλες</li>
-          <li>Μασάζ με αρωματική, απαλή κρεμούλα</li>
-          <li>Χορός &amp; καραόκε</li>
-          <li>Πασαρέλα &amp; fashion show</li>
-          <li>Δωράκι-έκπληξη για την εορτάζουσα</li>
-          <li>Στολισμός χώρου με θεματικά μπαλόνια</li>
-          <li>Menu: Cupcakes &amp; χυμό</li>
-          <li>Ηλεκτρονικές προσκλήσεις</li>
-        </ul>
-        <img src={SpaParty2} alt="Baby Spa Party - Πακέτο 2" className="package-image" loading="lazy" />
 
-        {/* Πακέτο 3 */}
-        <h3>Πακέτο 3 “Mini Party” ✨</h3>
-        <p>Μια πιο σύντομη αλλά εξίσου μαγική εμπειρία Spa!</p>
-        <ul>
-          <li>Χαλαρωτική μουσική &amp; ρόμπες, κορδέλες μαλλιών, πετσετούλες &amp; face mask</li>
-          <li>Περιποίηση προσώπου: μάσκα σοκολάτας ή γιαουρτιού &amp; φρέσκο αγγουράκι</li>
-          <li>Μανικιούρ &amp; πεντικιούρ με παιδικά βερνίκια νερού</li>
-          <li>Απαλό μακιγιάζ με υποαλλεργικά παιδικά καλλυντικά &amp; Glitter</li>
-          <li>Χτένισμα για την εορτάζουσα και φίλες</li>
-          <li>Μασάζ με αρωματική, απαλή κρεμούλα</li>
-        </ul>
-        <img src={SpaParty3} alt="Baby Spa Party - Πακέτο 3" className="package-image" loading="lazy" />
+        <div className="sp-gallery">
+          {partyPhotos.map((photo, index) => (
+            <img
+              key={photo}
+              src={photo}
+              alt={`Spa Party - φωτογραφία ${index + 1}`}
+              loading="lazy"
+            />
+          ))}
+        </div>
 
-        {/* Πακέτο 4 */}
-        {/* <h3>Πακέτο 4 “Party αποθεραπείας για μικρούς αθλητές”</h3>
-        <p>
-          Το πιο δροσερό και διασκεδαστικό πάρτι για αγόρια και κορίτσια που αγαπούν τη
-          δράση, τη χαρά και τη διασκέδαση χωρίς τέλος!
-        </p>
-        <p>
-          Μετά από προπόνηση ή αγώνα, οι μικροί μας πρωταθλητές χρειάζονται φροντίδα,
-          χαλάρωση και αποθεραπεία,πάντα με στυλ και διασκέδαση!
-        </p>
-        <ul>
-          <li>Cool μουσική &amp; μαγιό για υδροθεραπεία</li>
-          <li>Παιδικό μασάζ αποθεραπείας</li>
-          <li>Χορός &amp; καραόκε με αγαπημένα τραγούδια</li>
-          <li>Στολισμός χώρου με θεματικά μπαλόνια</li>
-          <li>Menu: Cupcakes &amp; χυμό</li>
-          <li>Ηλεκτρονικές προσκλήσεις</li>
-        </ul> */}
-        <br />
+        <div className="sp-closing">
+          <h2>Δεν είναι απλώς ένα πάρτι.</h2>
+          <p>Είναι μια εμπειρία που τα κορίτσια θα θυμούνται για καιρό.</p>
+        </div>
 
-        <h3> Extra Υπηρεσίες </h3>
-        <p>Σε <b>κάθε πακέτο</b> μπορείτε να προσθέσετε:</p>
-        <ul>
-          <li><b>Θεματικό στολισμό</b> της επιλογής σας (π.χ. unicorn, princess, tropical κ.ά.)</li>
-          <li><b>Χρήση τζακούζι</b>, για ακόμα πιο εντυπωσιακή εμπειρία Spa Party!</li>
-        </ul>
-        <br />
-        <p>
-          Ελάτε να σχεδιάσουμε μαζί βήμα-βήμα την πιο μαγική γιορτή για τους
-          μικρούς μας θησαυρούς! Για περισσότερες πληροφορίες και διευκρινίσεις,
-          επικοινωνήστε μαζί μας, με αγάπη θα φροντίσουμε κάθε λεπτομέρεια!
+        <p className="sp-age">
+          Τα Spa Parties απευθύνονται σε παιδιά από <b>5 ετών και άνω</b>.
         </p>
-        <h2> * Απο 6 χρονών και άνω</h2>
-        <p>
-          Για περισσότερες πληροφορίες ή διευκρινίσεις, μπορείτε να επικοινωνήσετε μαζί μας!
-        </p>
-        <img src={SpaParty4} alt="Baby Spa Party - Πακέτο 3" className="package-image" loading="lazy" />
       </div>
 
       <BubblesBackground />

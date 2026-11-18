@@ -79,3 +79,89 @@
   transform: translateX(6px);
   color: #5ab5af;
 }
+
+
+/* === Βρεφική Μάλαξη: intro === */
+.content p.bm-lead {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+.content b {
+  color: #5ab5af;
+  font-weight: 700;
+}
+
+.content h2.bm-center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* === Βρεφική Μάλαξη: values === */
+.content ul.bm-values {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.content ul.bm-values li {
+  flex: 0 1 calc(33.333% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 1.25rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.content ul.bm-values li:hover {
+  transform: translateY(-3px);
+  color: #5ab5af;
+}
+
+.bm-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgb(242, 235, 226);
+  font-size: 1.4rem;
+}
+
+/* === Βρεφική Μάλαξη: closing quote === */
+.content p.bm-closing {
+  max-width: 640px;
+  margin: 2.5rem auto 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #5ab5af;
+  border-top: 2px solid rgba(90, 181, 175, 0.35);
+  border-bottom: 2px solid rgba(90, 181, 175, 0.35);
+}
+
+@media (max-width: 600px) {
+  .content ul.bm-values li {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  .content p.bm-closing {
+    font-size: 1.15rem;
+  }
+}

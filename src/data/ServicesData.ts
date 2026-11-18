@@ -34,10 +34,10 @@ export interface Service {
 export const services: Service[] = [
   {
     icon: Baby,
-    title: "Baby Spa / Βρεφική Ευεξία στο Νερό | 40 ημερών - 3 ετών",
-    navTitle: "Baby Spa / Βρεφική Ευεξία στο Νερό",
+    title: "💧Baby Spa | Μια ξεχωριστή εμπειρία στο νερό",
+    navTitle: "Baby Spa | Μια ξεχωριστή εμπειρία στο νερό",
     description:
-      "Το ζεστό νερό και οι απαλές κινήσεις , δημιουργούν αίσθημα ασφάλειας, βοηθώντας στην ανάπτυξη της αυτοπεποίθησης του μωρού",
+      "Μια όμορφη εμπειρία νερού για βρέφη και μικρά παιδιά",
     price: "35 €",
     image: hydro,
     bgClass: "pink-bg",
@@ -45,10 +45,10 @@ export const services: Service[] = [
   },
   {
     icon: Hand,
-    title: "Βρεφική Μάλαξη | Η τρυφερή τέχνη της φροντίδας",
+    title: "🤍Βρεφική Μάλαξη",
     navTitle: "Βρεφική Μάλαξη",
     description:
-      "Η σωματική επαφή είναι το πιο δυνατό, θεραπευτικό και καθησυχαστικό συναίσθημα για το μωρό σας. Το βρεφικό μασάζ δεν είναι απλώς μια στιγμή τρυφερότητας.",
+      "Τρυφερές στιγμές επαφής, επικοινωνίας και σύνδεσης γονέα και μωρού.",
     price: "35 €",
     image: massage,
     bgClass: "pink-bg",
@@ -56,10 +56,10 @@ export const services: Service[] = [
   },
   {
     icon: Cake,
-    title: "Spa Party | Γενέθλια",
+    title: " 🎀 Spa Parties",
     navTitle: "Spa Party",
     description:
-      "Γιορτάστε τα γενέθλια του παιδιού σας σε έναν μαγικό χώρο γεμάτο φροντίδα, χαρά και αισθητηριακές εμπειρίες που θα μείνουν αξέχαστες! *6 χρονών και άνω",
+      "Ξεχωριστά παιδικά πάρτι γεμάτα διασκέδαση, δημιουργία και όμορφες στιγμές.",
     image: serviceparty,
     bgClass: "pink-bg",
     link: "/party",
@@ -75,9 +75,9 @@ export const services: Service[] = [
   // },
   {
     icon: Footprints,
-    title: "Family Tub | Βρεφική Ευεξία στο Νερό για όλη την οικογένεια",
+    title: "🛁Family Tub",
     navTitle: "Family Tub",
-    description: `Η υπηρεσία Family Tub στο For My Baby Spa δεν είναι μόνο για μωράκια, αλλά και για παιδιά μεγαλύτερης ηλικίας, και φυσικά για τους γονείς που θέλουν να ζήσουν αυτήν την όμορφη εμπειρία μαζί τους! Πρόκειται για μια μοναδική στιγμή χαλάρωσης και παιχνιδιού μέσα στο νερό, που φέρνει την οικογένεια πιο κοντά και δημιουργεί αξέχαστες αναμνήσεις.`,
+    description: `Μια όμορφη εμπειρία νερού που μπορούν να μοιραστούν γονείς και παιδιά.`,
     link: "/family-tub",
     image: FamilyTub,
     bgClass: "pink-bg",
@@ -143,20 +143,18 @@ export const services: Service[] = [
 //   },
   {
     icon: Footprints,
-    title: "Μαθήματα Βρεφικής Μάλαξης",
-    navTitle: "Μαθήματα Βρεφικής Μάλαξης",
-    description: `Η βρεφική μάλαξη είναι πολλά περισσότερα από μια τεχνική· είναι ένας μοναδικός τρόπος
-επικοινωνίας ανάμεσα στον γονιό και το μωρό του. Μέσα από την απαλότητα της αφής, το μωρό
-νιώθει ασφάλεια, αγάπη και φροντίδα, ενώ ταυτόχρονα ωφελείται σωματικά και ψυχικά.`,
-    link: "/mathimata-vrefikis-malaxis",
+    title: "🎨 Creative Workshops",
+    navTitle: "Creative Workshops",
+    description: `Θεματικές δημιουργικές δραστηριότητες για μικρά χεράκια και μεγάλη φαντασία`,
+    link: "/creative-workshops",
     image: vrefiki,
     bgClass: "pink-bg",
   },
   {
     icon: Footprints,
-    title: "Ξεμύρωμα",
+    title: "👶Ξεμύρωμα",
     navTitle: "Ξεμύρωμα",
-    description: "Ξεμύρωμα | Η παράδοση συναντά τη φροντίδα",
+    description: "Μια τρυφερή εμπειρία φροντίδας μετά τη βάπτιση.",
     link: "/ksemiroma",
     image: Ksemiroma2,
     bgClass: "pink-bg",

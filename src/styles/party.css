@@ -29,3 +29,318 @@ h3 {
   margin-bottom: 1rem;
   color: #5ab5af;
 }
+
+
+/* === Family Tub: intro === */
+.content p.ft-lead {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* === Family Tub: values === */
+.content ul.ft-values {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.content ul.ft-values li {
+  flex: 0 1 calc(33.333% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 1.25rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.content ul.ft-values li:hover {
+  transform: translateY(-3px);
+  color: #5ab5af;
+}
+
+.ft-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgb(242, 235, 226);
+  font-size: 1.4rem;
+}
+
+/* === Family Tub: closing quote === */
+.content p.ft-closing {
+  max-width: 640px;
+  margin: 2.5rem auto 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #5ab5af;
+  border-top: 2px solid rgba(90, 181, 175, 0.35);
+  border-bottom: 2px solid rgba(90, 181, 175, 0.35);
+}
+
+@media (max-width: 600px) {
+  .content ul.ft-values li {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  .content p.ft-closing {
+    font-size: 1.15rem;
+  }
+} 
+
+/* === Spa Party: intro === */
+.content p.sp-lead {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+.content h2.sp-center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* === Spa Party: included items === */
+.content ul.sp-values {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.content ul.sp-values li {
+  flex: 0 1 calc(33.333% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 1.25rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.content ul.sp-values li:hover {
+  transform: translateY(-3px);
+  color: #5ab5af;
+}
+
+.sp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgb(242, 235, 226);
+  font-size: 1.4rem;
+}
+
+.content p.sp-note {
+  text-align: center;
+  font-style: italic;
+}
+
+/* === Spa Party: photo gallery === */
+.sp-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.sp-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.sp-gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* === Spa Party: closing === */
+.sp-closing {
+  max-width: 640px;
+  margin: 2.5rem auto 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 2px solid rgba(90, 181, 175, 0.35);
+  border-bottom: 2px solid rgba(90, 181, 175, 0.35);
+}
+
+.sp-closing h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.content .sp-closing p {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #5ab5af;
+}
+
+.content p.sp-age {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .content ul.sp-values li {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  .sp-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .content .sp-closing p {
+    font-size: 1.15rem;
+  }
+}
+
+/* === Creative Workshops: intro === */
+.content p.cw-lead {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* === Creative Workshops: activities === */
+.content ul.cw-values {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.content ul.cw-values li {
+  flex: 0 1 calc(33.333% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 1.25rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.content ul.cw-values li:hover {
+  transform: translateY(-3px);
+  color: #5ab5af;
+}
+
+.cw-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgb(242, 235, 226);
+  font-size: 1.4rem;
+}
+
+/* === Creative Workshops: closing quote === */
+.content p.cw-closing {
+  max-width: 640px;
+  margin: 2.5rem auto 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #5ab5af;
+  border-top: 2px solid rgba(90, 181, 175, 0.35);
+  border-bottom: 2px solid rgba(90, 181, 175, 0.35);
+}
+
+@media (max-width: 600px) {
+  .content ul.cw-values li {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  .content p.cw-closing {
+    font-size: 1.15rem;
+  }
+}
+
+/* === Ξεμύρωμα: intro === */
+.content p.ks-lead {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* === Ξεμύρωμα: photo gallery === */
+.ks-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+.ks-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.ks-gallery img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .ks-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .ks-gallery img {
+    aspect-ratio: 4 / 3;
+  }
+}

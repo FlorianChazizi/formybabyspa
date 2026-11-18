@@ -23,7 +23,7 @@ export default function ServicesSection() {
         {/* Main Service Cards */}
         <div className="services-grid">
           {services.map((service, index) => {
-            const Icon = service.icon;
+            // const Icon = service.icon;
             return (
               <div
                 key={index}
@@ -38,7 +38,7 @@ export default function ServicesSection() {
                 />
                 <div className="service-content">
                   <div className="service-title">
-                    <Icon className="service-icon" />
+                    {/* <Icon className="service-icon" /> */}
                     <h3>{service.title}</h3>
                   </div>
                   <p className="service-description">{service.description}</p>

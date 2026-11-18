@@ -23,9 +23,10 @@ import FamilyTub from './components/FamilyTube.tsx';
 // import YogaMamaMwro from './components/YogaMamaMwro.tsx';
 // import ProetimasiaGiaThnGenna from './components/ProetimasiaGiaThnGenna.tsx'; 
 // import MathimataThilasmou from './components/MathimataThilasmou.tsx';
-import MathimataVrefikisMalaxis from './components/MathimataVrefikisMalaxis.tsx';
+import CreativeWorkshops from './components/CreativeWorkshops.tsx';
 import Ksemiroma from './components/Ksemiroma.tsx';
-import MadeBy from './components/MadeBy.tsx';
+// import MadeBy from './components/MadeBy.tsx';
+import Welcome from './components/Welcome.tsx';
 import { Analytics } from "@vercel/analytics/react";
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           element={
             <>
               <HeroCarousel />
+              <Welcome />
               <WhoWeAre />
               <ServicesSection />
               <ContactSection />
@@ -99,8 +101,8 @@ function App() {
           element={<MathimataThilasmou />}
         /> */}
         <Route
-          path="/mathimata-vrefikis-malaxis"
-          element={<MathimataVrefikisMalaxis />}
+          path="/creative-workshops"
+          element={<CreativeWorkshops />}
         />
         <Route
           path="/ksemiroma"
@@ -111,7 +113,7 @@ function App() {
 
       <Analytics />
       <Footer />
-      <MadeBy />    
+      {/* <MadeBy />     */}
     </>
   )
 }

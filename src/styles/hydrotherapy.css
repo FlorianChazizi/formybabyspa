@@ -91,3 +91,91 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+/* === Baby Spa: experience list === */
+.service-page ul.bs-experience {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.service-page ul.bs-experience li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.service-page ul.bs-experience li:hover {
+  transform: translateY(-3px);
+  color: #5ab5af;
+}
+
+.bs-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(242, 235, 226);
+  font-size: 1.25rem;
+}
+
+/* === Baby Spa: info cards === */
+.bs-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.bs-info-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #5ab5af;
+}
+
+.bs-info-card h2 {
+  font-size: 1.25rem;
+}
+
+.service-page .bs-info-card p {
+  margin-bottom: 0;
+}
+
+.service-page b {
+  color: #5ab5af;
+  font-weight: 700;
+}
+
+/* === Baby Spa: closing line === */
+.service-page p.bs-closing {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #5ab5af;
+  margin: 2.5rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .service-page ul.bs-experience,
+  .bs-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-page p.bs-closing {
+    font-size: 1.15rem;
+  }
+}
